@@ -4,9 +4,10 @@
 ### Game Concept
 The chosen theme is a dungeon crawler set in FEUP's campus at night. Its goal is to “simply” get a cup of coffee.
 The main mechanics of the game are:
-Collect coins, cups of coffee, one student card and multiple objects.
-Use objects to distract guards, by throwing them and making a noise, attracting them or make the floor dirty and attract the cleaning ladies.
+Collect coins, cups of coffee and one student card. 
+Sacrifice coins to distract guards, by throwing them and making a noise, attracting them or or tip over trash bins in order to attract the cleaning ladies.
 The player can get caught up to 3 times by the guards and get away with it by giving excuses for being at FEUP that late. When caught a 4th time, it’s game over.
+The player can walk or sprint (or walks slowly), where sprinting can make noise that can alert the guards
 
 ### Proposed Game Engine
 The group plans on using Unity to develop the prototype (and demo).
