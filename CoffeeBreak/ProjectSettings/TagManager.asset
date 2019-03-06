@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Cup
+  - Card
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Ground
   - 
   - 
   - 
@@ -45,6 +46,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 4067162507
+    locked: 0
+  - name: Objects
+    uniqueID: 3621370991
     locked: 0
   - name: Player
     uniqueID: 2908514757

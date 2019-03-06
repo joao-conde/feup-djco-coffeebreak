@@ -12,7 +12,8 @@ public class Player : MonoBehaviour{
     public float throwSpeed;
     private Animator playerAnimator;
 
-    private bool hasCup; 
+    private bool hasCup, hasCard; 
+
 
     private bool playerMoving;
     private Vector2 lastMove;
@@ -79,6 +80,9 @@ public class Player : MonoBehaviour{
         else if(other.gameObject.CompareTag("Cup")){
             Destroy(other.gameObject);
             hasCup = true;
+        }else if(other.gameObject.CompareTag("Card")){
+            Destroy(other.gameObject);
+            hasCard = true;
         }
     }
 
