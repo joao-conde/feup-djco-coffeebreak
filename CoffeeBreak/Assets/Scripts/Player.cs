@@ -12,7 +12,8 @@ public class Player : MonoBehaviour{
     public float throwSpeed;
     private Animator playerAnimator;
 
-    private bool hasCup, hasCard; 
+    private bool hasCup, hasCard;
+    private GameObject interactiveObject;
 
 
     private bool playerMoving;
@@ -31,7 +32,7 @@ public class Player : MonoBehaviour{
 
     private void Update() {
         PlayerMovement();
-        Debug.Log(hasCup);
+        
     }
 
     
@@ -64,6 +65,12 @@ public class Player : MonoBehaviour{
             }
         }
 
+        if (Input.GetButtonDown("Interact"))
+        {
+            if(interactiveObject != null && hasCard)
+                interactiveObject.SendMessage("Open");
+        }
+
         playerAnimator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
         playerAnimator.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
         playerAnimator.SetBool("PlayerMoving", playerMoving);
@@ -77,12 +84,18 @@ public class Player : MonoBehaviour{
             coins++;
         }
 
-        else if(other.gameObject.CompareTag("Cup")){
+        if(other.gameObject.CompareTag("Cup")){
             Destroy(other.gameObject);
             hasCup = true;
-        }else if(other.gameObject.CompareTag("Card")){
+        }
+        if (other.gameObject.CompareTag("Card")){
             Destroy(other.gameObject);
             hasCard = true;
+        }
+
+        if (other.gameObject.CompareTag("Doors"))
+        {
+            interactiveObject = other.gameObject;
         }
     }
 
