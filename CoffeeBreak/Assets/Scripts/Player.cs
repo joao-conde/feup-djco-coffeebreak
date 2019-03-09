@@ -67,8 +67,15 @@ public class Player : MonoBehaviour{
 
         if (Input.GetButtonDown("Interact"))
         {
-            if(interactiveObject != null && hasCard)
-                interactiveObject.SendMessage("Open");
+            if(interactiveObject != null){
+                if(interactiveObject.CompareTag("Doors") && hasCard)
+                    interactiveObject.SendMessage("Open");
+
+                if(interactiveObject.CompareTag("TrashBin"))
+                    interactiveObject.SendMessage("TipOver");
+
+                //extendable to the coffee machine
+            }
         }
 
         playerAnimator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));

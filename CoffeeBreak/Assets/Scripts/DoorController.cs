@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    public bool isOpened;
+    public bool isOpen;
     public BoxCollider2D mainCollider;
     
 
     public void Open()
     {
-        if (!isOpened)
+        if (!isOpen)
         {
-            isOpened = true;
+            isOpen = true;
             mainCollider.enabled = false;
         }
         else
         {
-            isOpened = false;
+            isOpen = false;
             mainCollider.enabled = true;
         }
     }

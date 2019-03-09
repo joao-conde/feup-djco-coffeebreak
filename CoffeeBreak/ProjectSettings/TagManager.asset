@@ -8,6 +8,7 @@ TagManager:
   - Cup
   - Card
   - Doors
+  - TrashBin
   layers:
   - Default
   - TransparentFX
