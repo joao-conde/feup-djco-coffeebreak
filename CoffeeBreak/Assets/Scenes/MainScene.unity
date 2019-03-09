@@ -4992,8 +4992,26 @@ PrefabInstance:
     - target: {fileID: 4234828987758751647, guid: ecea25998c130a9449d8313397fe9f37,
         type: 3}
       propertyPath: throwSpeed
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4234828987758751647, guid: ecea25998c130a9449d8313397fe9f37,
+        type: 3}
+      propertyPath: coin
+      value: 
+      objectReference: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
+        type: 3}
+    - target: {fileID: 4234828987758751647, guid: ecea25998c130a9449d8313397fe9f37,
+        type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
+        type: 3}
+    - target: {fileID: 4234828987758751647, guid: ecea25998c130a9449d8313397fe9f37,
+        type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
+        type: 3}
     - target: {fileID: 3265859098755676247, guid: ecea25998c130a9449d8313397fe9f37,
         type: 3}
       propertyPath: m_IsTrigger

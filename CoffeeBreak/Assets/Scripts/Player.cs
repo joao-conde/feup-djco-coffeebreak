@@ -6,19 +6,19 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour{
 
-    private int coins;
     public float moveSpeed;
-
     public float throwSpeed;
+    public Transform coinPrefab;
+
+    private int coins;
+    private Transform coinToss = null;
+    private Vector3 coinTarget;
+
     private Animator playerAnimator;
-
-    private bool hasCup, hasCard;
+    private bool hasCup = false, hasCard = false;
     private GameObject interactiveObject;
-
-
     private bool playerMoving;
     private Vector2 lastMove;
-
     private Rigidbody2D rb;
 
    
@@ -26,16 +26,32 @@ public class Player : MonoBehaviour{
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        coins = GameManager.instance.initialPlayerCoins;
-        hasCup = false;
     }
 
     private void Update() {
         PlayerMovement();
+
+        if(Input.GetButtonDown("Fire1") && coins > 0 && coinToss == null) TossCoin();
+
+        if(coinToss != null){
+            float step = throwSpeed * Time.deltaTime;
+            coinToss.position = Vector2.MoveTowards(coinToss.position, coinTarget, step);
+            if(coinToss.position == coinTarget){
+                coinToss.tag = "Coin";
+                coinToss = null;
+            }
+        }
         
     }
 
-    
+
+    private void TossCoin(){
+        coinToss = Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        coinToss.tag = "CoinToss";
+        coinTarget = transform.position + Vector3.Scale(new Vector3(5, 5, 0), lastMove);
+        coins--;
+    }
+
 
     private void PlayerMovement(){
         playerMoving = false;
