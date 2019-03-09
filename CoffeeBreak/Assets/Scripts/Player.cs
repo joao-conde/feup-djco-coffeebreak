@@ -108,7 +108,7 @@ public class Player : MonoBehaviour{
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Doors"))
+        if (collision.gameObject.CompareTag("Doors") || collision.gameObject.CompareTag("TrashBin"))
         {
             interactiveObject = null;
         }
