@@ -69,10 +69,10 @@ public class Player : MonoBehaviour{
         {
             if(interactiveObject != null){
                 if(interactiveObject.CompareTag("Doors") && hasCard)
-                    interactiveObject.SendMessage("Open");
+                    interactiveObject.SendMessage("Interact");
 
                 if(interactiveObject.CompareTag("TrashBin"))
-                    interactiveObject.SendMessage("TipOver");
+                    interactiveObject.SendMessage("Interact");
 
                 //extendable to the coffee machine
             }
@@ -100,7 +100,7 @@ public class Player : MonoBehaviour{
             hasCard = true;
         }
 
-        if (other.gameObject.CompareTag("Doors"))
+        if (other.gameObject.CompareTag("Doors") || other.gameObject.CompareTag("TrashBin"))
         {
             interactiveObject = other.gameObject;
         }
