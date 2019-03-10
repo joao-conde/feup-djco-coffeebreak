@@ -8,6 +8,7 @@ public class GuardController : AIController
 
     public Light flashlight;
     public Vector3 velocity;
+    
     // Start is called before the first frame update
 
     protected  void Start()
