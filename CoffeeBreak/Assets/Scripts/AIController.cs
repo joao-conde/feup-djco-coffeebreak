@@ -66,14 +66,6 @@ public class AIController : MonoBehaviour
             agent.SetDestination(target);
         }
             
-
-        /*if (moveAI && target != null)
-        {
-            agent.SetDestination(target);
-            
-            
-        }*/
-
         if (Input.GetButtonDown("Fire2"))
         {
             target = Input.mousePosition;
