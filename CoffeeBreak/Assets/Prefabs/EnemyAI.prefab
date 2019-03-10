@@ -1,5 +1,74 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &68909530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 68909531}
+  - component: {fileID: 68909532}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &68909531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68909530}
+  m_LocalRotation: {x: -0.10836076, y: 0.62521577, z: -0.12045516, w: 0.76344866}
+  m_LocalPosition: {x: 0, y: -0.03, z: -0.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7112436332879688546}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -0.85, y: 78.77, z: -18.63}
+--- !u!108 &68909532
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68909530}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 13.9
+  m_Range: 68.12
+  m_SpotAngle: 35
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &7112436332879688558
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +80,7 @@ GameObject:
   - component: {fileID: 7112436332879688546}
   - component: {fileID: 7112436332879688545}
   - component: {fileID: 7112436332879688544}
-  - component: {fileID: 7112436332879688559}
+  - component: {fileID: 5657895258130478435}
   m_Layer: 0
   m_Name: EnemyAI
   m_TagString: Untagged
@@ -29,7 +98,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.98, y: -0.5183647, z: -5.394675}
   m_LocalScale: {x: 10, y: 10, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 68909531}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103,7 +173,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &7112436332879688559
+--- !u!114 &5657895258130478435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,6 +182,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7112436332879688558}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f4ed09b38790e4db1e28b79634817a, type: 3}
+  m_Script: {fileID: 11500000, guid: d49652df02dcc8a45a113bd00b79d095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  script: {fileID: 0}
+  flashlight: {fileID: 68909532}
+  velocity: {x: 0, y: 0, z: 0}

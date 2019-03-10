@@ -5,25 +5,32 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour
 {
-    private NavMeshAgent agent;
-    private bool moveAI;
-    private Vector3 target;
+    protected NavMeshAgent agent;
+    protected bool moveAI;
+    protected Vector3 target;
+    protected Vector3 direction;
+    protected Vector3 origin;
+    
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         moveAI = false;
+        origin = transform.position;
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
+        direction = agent.velocity.normalized;
+       
         if (moveAI && target != null)
         {
             agent.SetDestination(target);
-            Debug.Log(target);
+            
+            
         }
 
         if (Input.GetButtonDown("Fire2"))
