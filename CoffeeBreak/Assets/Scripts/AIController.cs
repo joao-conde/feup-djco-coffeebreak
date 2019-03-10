@@ -28,7 +28,6 @@ public class AIController : MonoBehaviour
         
         moveAI = false;
         origin = transform.position;
-        
         GotoNextPoint();
         
     }
@@ -41,7 +40,7 @@ public class AIController : MonoBehaviour
 
         // Set the agent to go to the currently selected destination.
         target = points[destPoint].position;
-        Debug.Log(points[destPoint].position);
+        
 
         // Choose the next point in the array as the destination,
         // cycling to the start if necessary.
