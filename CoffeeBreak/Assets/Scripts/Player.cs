@@ -42,7 +42,6 @@ public class Player : MonoBehaviour{
             }
         }
         else if(Input.GetButtonDown("Fire1") && coins > 0){
-            Debug.Log(lastMove);
             coinToss = Instantiate(coinPrefab, transform.position + new Vector3(lastMove.x, lastMove.y, 0), Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D>().isTrigger = false;
             coinToss.GetComponent<Rigidbody2D>().AddForce(Vector3.Scale(new Vector3(throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
