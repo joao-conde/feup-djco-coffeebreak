@@ -9,7 +9,6 @@ TagManager:
   - Card
   - Doors
   - TrashBin
-  - CoinToss
   layers:
   - Default
   - TransparentFX

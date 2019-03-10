@@ -6,14 +6,13 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour{
 
-    public float moveSpeed;
-    public float throwSpeed;
+    public float throwForce;
     public Transform coinPrefab;
-
     private int coins;
     private Transform coinToss = null;
-    private Vector3 coinTarget;
+    private float stopThreshold = 0.5f;
 
+    public float moveSpeed;
     private Animator playerAnimator;
     private bool hasCup = false, hasCard = false;
     private GameObject interactiveObject;
@@ -21,7 +20,7 @@ public class Player : MonoBehaviour{
     private Vector2 lastMove;
     private Rigidbody2D rb;
 
-   
+
     private void Start() {
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator>();
@@ -29,31 +28,30 @@ public class Player : MonoBehaviour{
     }
 
     private void Update() {
-        PlayerMovement();
+        HandlePlayerMovement();
+        HandleCoinToss();
+    }
 
-        if(Input.GetButtonDown("Fire1") && coins > 0 && coinToss == null) TossCoin();
 
+    private void HandleCoinToss(){
         if(coinToss != null){
-            float step = throwSpeed * Time.deltaTime;
-            coinToss.position = Vector2.MoveTowards(coinToss.position, coinTarget, step);
-            if(coinToss.position == coinTarget){
-                coinToss.tag = "Coin";
+            Vector2 coinVelocity = coinToss.GetComponent<Rigidbody2D>().velocity;
+            if(Mathf.Abs(coinVelocity.x) <= stopThreshold && Mathf.Abs(coinVelocity.y) <= stopThreshold){
+                coinToss.GetComponent<CircleCollider2D>().isTrigger = true;
                 coinToss = null;
             }
         }
-        
+        else if(Input.GetButtonDown("Fire1") && coins > 0){
+            Debug.Log(lastMove);
+            coinToss = Instantiate(coinPrefab, transform.position + new Vector3(lastMove.x, lastMove.y, 0), Quaternion.identity);
+            coinToss.GetComponent<CircleCollider2D>().isTrigger = false;
+            coinToss.GetComponent<Rigidbody2D>().AddForce(Vector3.Scale(new Vector3(throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
+            coins--;
+        }
     }
 
 
-    private void TossCoin(){
-        coinToss = Instantiate(coinPrefab, transform.position, Quaternion.identity);
-        coinToss.tag = "CoinToss";
-        coinTarget = transform.position + Vector3.Scale(new Vector3(5, 5, 0), lastMove);
-        coins--;
-    }
-
-
-    private void PlayerMovement(){
+    private void HandlePlayerMovement(){
         playerMoving = false;
         if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f){
             playerMoving = true;
