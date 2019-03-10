@@ -2,39 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GuardController : AIController
-
-{
+public class GuardController : AIController{
 
     public Light flashlight;
     public Vector3 velocity;
+
+    public GameObject targetCoin = null;
+    private float stopThreshold = 0.5f;
     
     // Start is called before the first frame update
 
-    protected  void Start()
-    {
+    protected  void Start()    {
         base.Start();
         velocity = agent.velocity;
-        
-        
     }
-
 
     // Update is called once per frame
     protected override void Update()
     {
-        base.Update();
-       /* Vector3 moveDirection = agent.velocity;
-      
-        if(moveDirection != Vector3.zero)
-        {
-            Debug.Log("Ola");
-            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+       base.Update();
+       HandleDistraction();
+    }
 
-            Quaternion q = Quaternion.AngleAxis(angle, Vector3.right);
-            flashlight.transform.rotation = Quaternion.Slerp(flashlight.transform.rotation, q, Time.deltaTime*5);
+
+    private void HandleDistraction(){
+        if(targetCoin != null){
+            Rigidbody2D rbCoin = targetCoin.GetComponent<Rigidbody2D>();
+            
+            //stopped coin
+            if(rbCoin.velocity.x <= stopThreshold && rbCoin.velocity.y <= stopThreshold){ 
+                agent.SetDestination(rbCoin.position);
+            }
+            
+            //on coin
+            if(rbCoin.position.x <= transform.position.x + stopThreshold&& rbCoin.position.y <= transform.position.y + stopThreshold){ 
+                Destroy(targetCoin);
+                targetCoin = null;
+            } 
         }
-       */
-       
+    }
+    private void OnTriggerStay2D(Collider2D collision) {
+        if(collision.gameObject.CompareTag("Coin") && targetCoin == null){
+            targetCoin = collision.gameObject;
+        }
     }
 }

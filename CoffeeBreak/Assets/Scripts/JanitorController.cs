@@ -34,7 +34,7 @@ public class JanitorController : AIController
     {
         MakeDecision();
 
-        Debug.Log(agent.hasPath);
+        //Debug.Log(agent.hasPath);
 
         if (target != null)
         {
