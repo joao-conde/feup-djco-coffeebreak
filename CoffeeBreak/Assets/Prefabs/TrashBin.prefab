@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6943733385500951284}
   - component: {fileID: 6943733385500951243}
   - component: {fileID: 6943733385500951242}
+  - component: {fileID: 1155378606}
   m_Layer: 0
   m_Name: TrashBin
   m_TagString: TrashBin
@@ -67,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1386452539
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 17e58f7a8c3197f4a8f35735f6652f4e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -119,3 +120,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.019428, y: 6.1923904}
   m_EdgeRadius: 0
+--- !u!208 &1155378606
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6943733385500951286}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.5600002, y: 2.5600002, z: 3.7}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
