@@ -79,8 +79,9 @@ public class Player : MonoBehaviour {
                 if (interactiveObject.CompareTag ("Doors") && hasCard)
                     interactiveObject.SendMessage ("Interact");
 
-                if (interactiveObject.CompareTag ("TrashBin"))
-                    interactiveObject.SendMessage ("Interact");
+                if (interactiveObject.CompareTag ("TrashBin")){
+                    interactiveObject.SendMessage ("DropBin");
+                }
 
                 //extendable to the coffee machine
             }

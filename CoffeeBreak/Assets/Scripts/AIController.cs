@@ -7,9 +7,7 @@ public class AIController : MonoBehaviour
 {
     
     public Transform[] points;
-
     
-
     protected int destPoint = 0;
     protected NavMeshAgent agent;
     protected bool moveAI;

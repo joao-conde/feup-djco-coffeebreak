@@ -12,7 +12,7 @@ public class GuardController : AIController{
     
     // Start is called before the first frame update
 
-    protected  void Start()    {
+    protected override void Start(){ 
         base.Start();
         velocity = agent.velocity;
     }
