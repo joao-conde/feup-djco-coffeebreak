@@ -99,7 +99,7 @@ Transform:
   m_GameObject: {fileID: 7112436332879688558}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.98, y: -0.5183647, z: -5.394675}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 4, y: 4, z: 1}
   m_Children:
   - {fileID: 68909531}
   m_Father: {fileID: 0}
@@ -194,8 +194,7 @@ MonoBehaviour:
   - {fileID: 0}
   flashlight: {fileID: 68909532}
   velocity: {x: 0, y: 0, z: 0}
-  rbCoin: {fileID: 0}
-  targetCoin: {x: 0, y: 0}
+  targetCoin: {fileID: 0}
 --- !u!61 &2073463740
 BoxCollider2D:
   m_ObjectHideFlags: 0
