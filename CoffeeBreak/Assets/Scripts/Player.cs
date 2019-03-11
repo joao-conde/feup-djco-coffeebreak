@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour{
+public class Player : MonoBehaviour {
 
     public float throwForce;
     public Transform coinPrefab;
@@ -20,109 +20,95 @@ public class Player : MonoBehaviour{
     private Vector2 lastMove;
     private Rigidbody2D rb;
 
-
-    private void Start() {
+    private void Start () {
         coins = GameManager.instance.initialPlayerCoins;
-        playerAnimator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator> ();
+        rb = GetComponent<Rigidbody2D> ();
     }
 
-    private void Update() {
-        HandlePlayerMovement();
-        HandleCoinToss();
+    private void Update () {
+        HandlePlayerMovement ();
+        HandleCoinToss ();
     }
 
-
-    private void HandleCoinToss(){
-        if(coinToss != null){
-            Vector2 coinVelocity = coinToss.GetComponent<Rigidbody2D>().velocity;
-            if(Mathf.Abs(coinVelocity.x) <= stopThreshold && Mathf.Abs(coinVelocity.y) <= stopThreshold){
-                coinToss.GetComponent<CircleCollider2D>().isTrigger = true;
+    private void HandleCoinToss () {
+        if (coinToss != null) {
+            Vector2 coinVelocity = coinToss.GetComponent<Rigidbody2D> ().velocity;
+            if (Mathf.Abs (coinVelocity.x) <= stopThreshold && Mathf.Abs (coinVelocity.y) <= stopThreshold) {
+                coinToss.GetComponent<CircleCollider2D> ().isTrigger = true;
                 coinToss = null;
             }
-        }
-        else if(Input.GetButtonDown("Fire1") && coins > 0){
-            coinToss = Instantiate(coinPrefab, transform.position + new Vector3(lastMove.x, lastMove.y, 0), Quaternion.identity);
-            coinToss.GetComponent<CircleCollider2D>().isTrigger = false;
-            coinToss.GetComponent<Rigidbody2D>().AddForce(Vector3.Scale(new Vector3(throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
+        } else if (Input.GetButtonDown ("Fire1") && coins > 0) {
+            coinToss = Instantiate (coinPrefab, transform.position + new Vector3 (lastMove.x, lastMove.y, 0), Quaternion.identity);
+            coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
+            coinToss.GetComponent<Rigidbody2D> ().AddForce (Vector3.Scale (new Vector3 (throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
             coins--;
         }
     }
 
+    private void HandlePlayerMovement () {
+        playerAnimator.ResetTrigger ("playerLeft");
+        playerAnimator.ResetTrigger ("playerRight");
 
-    private void HandlePlayerMovement(){
-        playerMoving = false;
-        if(Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f){
-            playerMoving = true;
-            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
-            if (Input.GetButton("SlowMovement")){
-                playerAnimator.speed = 0.5f;
-                transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * moveSpeed / 2f * Time.deltaTime);
-            }
-            else{
-                playerAnimator.speed = 1f;
-                transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f) * moveSpeed * Time.deltaTime);
-            }
-        }
+        if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f) {
 
-        if(Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f){
-            playerMoving = true;
-            lastMove = new Vector2(0f,Input.GetAxisRaw("Vertical"));
-            if (Input.GetButton("SlowMovement")){
-                playerAnimator.speed = 0.5f;
-                transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * moveSpeed/2f * Time.deltaTime);
+            if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
+                playerAnimator.SetTrigger ("playerLeft");
+            } else if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
+                playerAnimator.SetTrigger ("playerRight");
             }
-            else{
-                playerAnimator.speed = 1f;
-                transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f) * moveSpeed * Time.deltaTime);
+
+            if (Input.GetButton ("SlowMovement")) {
+                transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed / 2f * Time.deltaTime);
+            } else {
+                transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed * Time.deltaTime);
             }
         }
 
-        if (Input.GetButtonDown("Interact"))
-        {
-            if(interactiveObject != null){
-                if(interactiveObject.CompareTag("Doors") && hasCard)
-                    interactiveObject.SendMessage("Interact");
+        if (Input.GetAxisRaw ("Vertical") > 0.5f || Input.GetAxisRaw ("Vertical") < -0.5f) {
 
-                if(interactiveObject.CompareTag("TrashBin"))
-                    interactiveObject.SendMessage("Interact");
+            if (Input.GetButton ("SlowMovement")) {
+                transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed / 2f * Time.deltaTime);
+            } else {
+                transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed * Time.deltaTime);
+            }
+        }
+
+        if (Input.GetButtonDown ("Interact")) {
+            if (interactiveObject != null) {
+                if (interactiveObject.CompareTag ("Doors") && hasCard)
+                    interactiveObject.SendMessage ("Interact");
+
+                if (interactiveObject.CompareTag ("TrashBin"))
+                    interactiveObject.SendMessage ("Interact");
 
                 //extendable to the coffee machine
             }
         }
-
-        playerAnimator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
-        playerAnimator.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
-        playerAnimator.SetBool("PlayerMoving", playerMoving);
-        playerAnimator.SetFloat("LastMoveX", lastMove.x);
-        playerAnimator.SetFloat("LastMoveY", lastMove.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.CompareTag("Coin")){
-            Destroy(other.gameObject);
+    private void OnTriggerEnter2D (Collider2D other) {
+        if (other.gameObject.CompareTag ("Coin")) {
+            Destroy (other.gameObject);
             coins++;
         }
 
-        if(other.gameObject.CompareTag("Cup")){
-            Destroy(other.gameObject);
+        if (other.gameObject.CompareTag ("Cup")) {
+            Destroy (other.gameObject);
             hasCup = true;
         }
-        if (other.gameObject.CompareTag("Card")){
-            Destroy(other.gameObject);
+        if (other.gameObject.CompareTag ("Card")) {
+            Destroy (other.gameObject);
             hasCard = true;
         }
 
-        if (other.gameObject.CompareTag("Doors") || other.gameObject.CompareTag("TrashBin"))
-        {
+        if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = other.gameObject;
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Doors") || collision.gameObject.CompareTag("TrashBin"))
-        {
+    private void OnTriggerExit2D (Collider2D collision) {
+        if (collision.gameObject.CompareTag ("Doors") || collision.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = null;
         }
     }
