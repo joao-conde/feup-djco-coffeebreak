@@ -7,7 +7,9 @@ using static TrashBinController;
 public class JanitorController : AIController
 {
     
-    public GameObject targetBin = null;
+    public float awerenessRadius;
+    private GameObject targetBin = null;
+    
 
     protected override void Start(){
         base.Start();
@@ -19,7 +21,8 @@ public class JanitorController : AIController
     }
     
     private void HandleTrashBins(){
-        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 2);
+        Debug.DrawLine(transform.position, transform.position + new Vector3(awerenessRadius, awerenessRadius, 0)); //comment for test
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, awerenessRadius);
         foreach(Collider2D col in hitColliders){
             if(col.tag == "TrashBin"){ 
                 TrashBinController bin = (TrashBinController)col.gameObject.GetComponent("TrashBinController");

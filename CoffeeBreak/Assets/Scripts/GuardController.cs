@@ -5,44 +5,44 @@ using UnityEngine;
 public class GuardController : AIController {
 
     public Light flashlight;
-
     public float rotationSpeed;
+    public float awerenessRadius;
 
     private GameObject targetCoin = null;
     private float stopThreshold = 0.20f;
 
-    // Start is called before the first frame update
 
-    protected void Start () {
+    protected override void Start () {
         base.Start ();
-
     }
 
-    // Update is called once per frame
     protected override void Update () {
         base.Update ();
         Vector3 direction = Vector3.Normalize (agent.velocity);
         flashlight.transform.forward = Vector3.RotateTowards (flashlight.transform.forward, direction, rotationSpeed * Time.deltaTime, 0.0f);
-        HandleDistraction ();
+        HandleDistraction();
     }
 
     protected void FixedUpdate () {
-        RaycastHit2D[] hit = Physics2D.RaycastAll((Vector2)gameObject.transform.position+(Vector2)flashlight.transform.forward.normalized,((Vector2)flashlight.transform.forward.normalized), 4.5f);
+        RaycastHit2D hit = Physics2D.Raycast((Vector2)gameObject.transform.position+(Vector2)flashlight.transform.forward.normalized,((Vector2)flashlight.transform.forward.normalized), 4.5f);
         Debug.DrawLine ((Vector2)gameObject.transform.position + (Vector2)flashlight.transform.forward.normalized, (Vector2)gameObject.transform.position + (Vector2)flashlight.transform.forward.normalized * 4.5f);
-
-        if(hit.Length > 1){
-            Debug.Log(hit[1].collider.tag);
-            if(hit[1].collider.CompareTag("Player")){
-                Debug.Log("Saw player");
+        if(hit.collider != null){
+            if(hit.collider.CompareTag("Player")){
+                //Debug.Log("Saw player");
             }
         }
-        
-        
-        
     }
 
-    //TODO: avoid catching coins not thrownlayerMask
-    private void HandleDistraction () {
+    //TODO: avoid catching coins not thrown - layerMask
+    private void HandleDistraction(){
+        Debug.DrawLine(transform.position, transform.position + new Vector3(awerenessRadius, awerenessRadius, 0)); //comment for test
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, awerenessRadius);
+        foreach(Collider2D col in hitColliders){
+            if(col.tag == "Coin" && targetCoin == null){ 
+                targetCoin = col.gameObject;
+            }
+        }
+
         if (targetCoin != null) {
             Rigidbody2D rbCoin = targetCoin.GetComponent<Rigidbody2D> ();
 
@@ -56,12 +56,6 @@ public class GuardController : AIController {
                 Destroy (targetCoin);
                 targetCoin = null;
             }
-        }
-    }
-
-    private void OnTriggerStay2D (Collider2D collision) {
-        if (collision.gameObject.CompareTag ("Coin") && targetCoin == null) {
-            targetCoin = collision.gameObject;
         }
     }
 }
