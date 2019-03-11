@@ -51,7 +51,7 @@ public class Player : MonoBehaviour {
         playerAnimator.ResetTrigger ("playerRight");
 
         if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f) {
-
+            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
             if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
                 playerAnimator.SetTrigger ("playerLeft");
             } else if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour {
         }
 
         if (Input.GetAxisRaw ("Vertical") > 0.5f || Input.GetAxisRaw ("Vertical") < -0.5f) {
-
+            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
             if (Input.GetButton ("SlowMovement")) {
                 transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed / 2f * Time.deltaTime);
             } else {

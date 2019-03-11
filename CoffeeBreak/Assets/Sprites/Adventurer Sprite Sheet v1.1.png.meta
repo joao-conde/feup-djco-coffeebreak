@@ -223,18 +223,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 086b06a3ce5434e84ab5159882eb6e6c
+      spriteID: 8ff994554608fba479b59f04289a2af2
       vertices: []
       indices: 
       edges: []
@@ -243,18 +243,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d8fd50dbf86c43f39288159086d0f16
+      spriteID: 1d54d0634df570080ad8caa0e4bd8703
       vertices: []
       indices: 
       edges: []
@@ -263,18 +263,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90a3917cfbb749989f42630a16a4164
+      spriteID: d53370c66f83446d39a6fe8bb647bbe4
       vertices: []
       indices: 
       edges: []
@@ -283,18 +283,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37cb09b09916a41148031910692fc5de
+      spriteID: a3b337b1a23370ceb876f7f236652fab
       vertices: []
       indices: 
       edges: []
@@ -303,18 +303,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152058345c3d8404295cdecb1ddb686f
+      spriteID: ce00ad83ebaf19de8b9940935f19d611
       vertices: []
       indices: 
       edges: []
@@ -323,18 +323,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15c3b0fd6b61644e6b06a0d8313a6345
+      spriteID: 45e2859fbcf7e7b958ef8a68c15373bf
       vertices: []
       indices: 
       edges: []
@@ -343,18 +343,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_6
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60c76649657f049fea38e2bccbeb929d
+      spriteID: 0ae8523c8213dcba28aa45a610de9882
       vertices: []
       indices: 
       edges: []
@@ -363,18 +363,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_7
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cef7f7f7b77004c5a974cb890cf82a8f
+      spriteID: e363637c18b10b50f81af7ac4acb9fda
       vertices: []
       indices: 
       edges: []
@@ -383,18 +383,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_8
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7324349eb4bc94b90b1b1f5e52ebfba8
+      spriteID: 3e8e80bd01c81ee5a9921a96614add90
       vertices: []
       indices: 
       edges: []
@@ -403,18 +403,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_9
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 598033350a25d468781c3e3e9a5cbeac
+      spriteID: e3a1e0593858dd7cb9d8457a3707d434
       vertices: []
       indices: 
       edges: []
@@ -423,18 +423,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_10
       rect:
         serializedVersion: 2
-        x: 320
+        x: 322
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53b8e29a40de0446e9d9fd937e557f29
+      spriteID: ecd4776ae153dad85a9469e8c2e7076a
       vertices: []
       indices: 
       edges: []
@@ -443,18 +443,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_11
       rect:
         serializedVersion: 2
-        x: 352
+        x: 354
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da786cb912d6441e8ab92fa1842768d9
+      spriteID: 11e457ab489949e529e25726e2db1d74
       vertices: []
       indices: 
       edges: []
@@ -463,18 +463,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_12
       rect:
         serializedVersion: 2
-        x: 384
+        x: 386
         y: 480
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34d8b4bff7c5b4f39aca2a87f798a70d
+      spriteID: 30674c756cd966da6813aa660b8c85ca
       vertices: []
       indices: 
       edges: []
@@ -483,18 +483,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_13
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88062d5d1a7b5439f95f4e2c691a7f8f
+      spriteID: 657c858d639f9414896d8567bad8f2c1
       vertices: []
       indices: 
       edges: []
@@ -503,18 +503,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 159e8de728a3e45a98802f4c6d890aba
+      spriteID: f0b93520a325ddc0fa9a18cb1c923acd
       vertices: []
       indices: 
       edges: []
@@ -523,18 +523,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_15
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dae2609aa0af4510acabb856a33171d
+      spriteID: 9ba56b2475c9c14aaa19565166f5d40d
       vertices: []
       indices: 
       edges: []
@@ -543,18 +543,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_16
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ff4ebb6a688342609488d31759d0003
+      spriteID: 444bed02c2a60606b8b45b954f999b3e
       vertices: []
       indices: 
       edges: []
@@ -563,18 +563,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_17
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fd4a62ca30fe4c29af6574a489fe818
+      spriteID: 35d601637b052455782aa56a1c9f3098
       vertices: []
       indices: 
       edges: []
@@ -583,18 +583,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_18
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8887148a9f1e41d39472c765aa17b2b
+      spriteID: 7476ccc318f4c4b75b693780b8ba82e9
       vertices: []
       indices: 
       edges: []
@@ -603,18 +603,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_19
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 540d6ceca2a884a6eb8611fe09d36546
+      spriteID: 6511181c0ae78a8debd9afc49d315579
       vertices: []
       indices: 
       edges: []
@@ -623,18 +623,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_20
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 448
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30ce55feba8734edaa83c9227e0e1e39
+      spriteID: 4cba79e58c38155c1b5eadd588efe226
       vertices: []
       indices: 
       edges: []
@@ -643,18 +643,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_21
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b6f578efb3b4f68a36afeee7dbe069
+      spriteID: 280b40189ac2208c5bbab724c87c4b75
       vertices: []
       indices: 
       edges: []
@@ -663,18 +663,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_22
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ecd8cfcc4371d4383a84983e36accb64
+      spriteID: 85de093f7e0fe2a2492d595bdcbece44
       vertices: []
       indices: 
       edges: []
@@ -683,18 +683,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_23
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17c056d5ce72141ddadee1013302fd70
+      spriteID: 52432603603569d629b2a867d041b155
       vertices: []
       indices: 
       edges: []
@@ -703,18 +703,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_24
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd5e79c31aa534a27b596d1cac45bbe9
+      spriteID: 791c9f47d62a82ba1aad9dc8bcc0fe10
       vertices: []
       indices: 
       edges: []
@@ -723,18 +723,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_25
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c6fb7d7ef6ac442dab031c2693a51e2
+      spriteID: 81080abbbc665755696bf371ee96fce6
       vertices: []
       indices: 
       edges: []
@@ -743,18 +743,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_26
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9836662144737424088439e4543ee8c8
+      spriteID: f6480d1d0a3ed6f2d9b6c05cb8ae990d
       vertices: []
       indices: 
       edges: []
@@ -763,18 +763,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_27
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c107d514ad28a418f9a89fce58df3a33
+      spriteID: b0fff358fec7f05c095bbf36656c92c7
       vertices: []
       indices: 
       edges: []
@@ -783,18 +783,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_28
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9726c168a94a344b8ba7f5f69399b148
+      spriteID: f79a496064542c8bbb43f260e9956043
       vertices: []
       indices: 
       edges: []
@@ -803,18 +803,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_29
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26436ef89e2a0470681456a7faf2c073
+      spriteID: 031da779cee583d3c993bc242b257044
       vertices: []
       indices: 
       edges: []
@@ -823,18 +823,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_30
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 416
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40a072fb3e0e246db9d633b0b368f4a9
+      spriteID: 358f5b50739058af2aacb91e126877f9
       vertices: []
       indices: 
       edges: []
@@ -843,18 +843,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_31
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 635f8aa208e6d4d238a1ee303a40fa0e
+      spriteID: cf28aa53fc9f4b7e187f348d624262bf
       vertices: []
       indices: 
       edges: []
@@ -863,18 +863,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_32
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491ce2b2797f34c78acd8030619d395d
+      spriteID: cd4eafa9dcc00cadba718fd16670537d
       vertices: []
       indices: 
       edges: []
@@ -883,18 +883,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_33
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ae4295ac2814845b42464f421c943d
+      spriteID: 855c4aa95a418d04a94124d93ee3332e
       vertices: []
       indices: 
       edges: []
@@ -903,18 +903,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_34
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39d374fe1b0df4293b97b01af3aa2a10
+      spriteID: 8f9a10e51a3ecfed0aed39357163c282
       vertices: []
       indices: 
       edges: []
@@ -923,18 +923,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_35
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdc99a9d862004972bc1b9420daeba20
+      spriteID: 384113b7fa119e24c81a24f8df2a796c
       vertices: []
       indices: 
       edges: []
@@ -943,18 +943,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_36
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a96692612b8964eb4822d401b505f484
+      spriteID: 0a321f538d82f9f36a0ab45a87e70bed
       vertices: []
       indices: 
       edges: []
@@ -963,18 +963,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_37
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99ff7b095225c42a885ec0b62f90cfa7
+      spriteID: d2aa0e261479ff4a8ab5f4c576da1510
       vertices: []
       indices: 
       edges: []
@@ -983,18 +983,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_38
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 708e197d3d1a04aaf81b5be849038a25
+      spriteID: 2aed7866ca80a9e3c828a281bbe2c949
       vertices: []
       indices: 
       edges: []
@@ -1003,18 +1003,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_39
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b4ce9ef09d9542bf9d698b3dac99a13
+      spriteID: 44086bcc61e278228a0f3fe6b72ef6b1
       vertices: []
       indices: 
       edges: []
@@ -1023,18 +1023,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_40
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 384
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb27da03bf8e4cb2864cfc7e60353e6
+      spriteID: 2f5f3a36e009f487f9b5ac9872c02dde
       vertices: []
       indices: 
       edges: []
@@ -1043,18 +1043,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_41
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28692b7781de64ec0892388168d4ef5a
+      spriteID: a0872a190d549659184e2ae464a6c633
       vertices: []
       indices: 
       edges: []
@@ -1063,18 +1063,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_42
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e333576f19bc4e438d4fe693bc34414
+      spriteID: 9062c81bd22b41e6285dbc73767b5a76
       vertices: []
       indices: 
       edges: []
@@ -1083,18 +1083,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_43
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af554cd846b8450aa5709bb3a357518
+      spriteID: 4f969c7baf0278c7dad8985147e1ddf5
       vertices: []
       indices: 
       edges: []
@@ -1103,18 +1103,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_44
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f020fa4d815e643b88e34cdcce9820b0
+      spriteID: 2ba57a3acce3266e8872bdfb9f0a2480
       vertices: []
       indices: 
       edges: []
@@ -1123,18 +1123,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_45
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a15583745cb6477f9bba153e091b200
+      spriteID: 98919a19e21cac6689f494000c2611d1
       vertices: []
       indices: 
       edges: []
@@ -1143,18 +1143,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_46
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e074c471e14b84ecd9844a1a7935736e
+      spriteID: ab55da4c0bf3e54fcad972eba8fe6b82
       vertices: []
       indices: 
       edges: []
@@ -1163,18 +1163,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_47
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cbc3a22948bb4c9cbfe35b93273f06c
+      spriteID: 3af68168f636eb3898644f1020331ae9
       vertices: []
       indices: 
       edges: []
@@ -1183,18 +1183,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_48
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2b62d3ed38ce496f970be86899f7881
+      spriteID: 202318bd607945baba843380c435d9f9
       vertices: []
       indices: 
       edges: []
@@ -1203,18 +1203,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_49
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b88ca109922cc43c9988f6fb2f48d74b
+      spriteID: f937e5d45913db249b95f50ddc77d25a
       vertices: []
       indices: 
       edges: []
@@ -1223,18 +1223,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_50
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 352
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 637c193256c4544b9908bb98ec9f468c
+      spriteID: c7a215b1a118bc0bba4937a97bb0e245
       vertices: []
       indices: 
       edges: []
@@ -1243,18 +1243,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_51
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d39d96d00b9842ff928672fa6fa60c9
+      spriteID: 489ceb6c813419a2da8554c212d92180
       vertices: []
       indices: 
       edges: []
@@ -1263,18 +1263,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_52
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b364ab3f01ab84ad3a67c63ad59b0f5c
+      spriteID: e4780d83fca89f89d892f7e963458120
       vertices: []
       indices: 
       edges: []
@@ -1283,18 +1283,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_53
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a41b7256427464b8eaee2af857c07a8b
+      spriteID: cc94e4eb83305bae2aa67ed8c062e9d4
       vertices: []
       indices: 
       edges: []
@@ -1303,18 +1303,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_54
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef576b9ab407f43c4b26018d461374e8
+      spriteID: a5602518b897cb3c4afaeb579194ca9c
       vertices: []
       indices: 
       edges: []
@@ -1323,18 +1323,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_55
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db13d645132f24cebb5e1c70a87f3b0b
+      spriteID: 0a6edd8d11cad88fbadfcc87ae79383d
       vertices: []
       indices: 
       edges: []
@@ -1343,18 +1343,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_56
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 320
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1be4417d6f4364332a1da4a56e0b812c
+      spriteID: cd38c54e2665421788adc1e666c2fe1a
       vertices: []
       indices: 
       edges: []
@@ -1363,18 +1363,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_57
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 288
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 632a42c0a0f234d05a027485500a1ea7
+      spriteID: 4e91da1a5fcd962faa0992a759f0d72a
       vertices: []
       indices: 
       edges: []
@@ -1383,18 +1383,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_58
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 288
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b6b6d221b28f41da812b9e54bed98e2
+      spriteID: 70046db6cf7b4e7daa1ce71e77b753ba
       vertices: []
       indices: 
       edges: []
@@ -1403,18 +1403,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_59
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 288
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847da045c9ac440f4b3a74c5073d5322
+      spriteID: e60ca327282c3908ba631f791290f179
       vertices: []
       indices: 
       edges: []
@@ -1423,18 +1423,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_60
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 288
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f0ea59c9519c4ffb8dcd3f58f007cc6
+      spriteID: c1292833c31cb1d2a98e74332d9be7c5
       vertices: []
       indices: 
       edges: []
@@ -1443,18 +1443,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_61
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98a78e695d21548f695e4939fb3e5d36
+      spriteID: 332db4b774eeaa880b4c5a48f9d4cbd2
       vertices: []
       indices: 
       edges: []
@@ -1463,18 +1463,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_62
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb1686b28336d4cd3973706a9ac367e7
+      spriteID: 158d34808c7d447d49b0c6d73116372b
       vertices: []
       indices: 
       edges: []
@@ -1483,18 +1483,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_63
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57d81c8bf99242a78684d4f4ebb713d
+      spriteID: c56a4e4af9fdfe55d9e42c84fe5c0916
       vertices: []
       indices: 
       edges: []
@@ -1503,18 +1503,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_64
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b9c42ff9bf2d46cda0b416979d29e2c
+      spriteID: 7c957c0e7617ffbc3ac771193dc6f467
       vertices: []
       indices: 
       edges: []
@@ -1523,18 +1523,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_65
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e242c68332cd444a9b377161d0b6cc98
+      spriteID: cba0c9ca10228dc9d97a006babc642bb
       vertices: []
       indices: 
       edges: []
@@ -1543,18 +1543,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_66
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68b1a84f456314c30aaba0398e756de9
+      spriteID: 88851a7f754a43aa384cdb9123a34618
       vertices: []
       indices: 
       edges: []
@@ -1563,18 +1563,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_67
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 256
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0c657db898ef4d039b84e718ca520db
+      spriteID: e875cfc7a5255e379bd1f8480f21a942
       vertices: []
       indices: 
       edges: []
@@ -1583,18 +1583,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_68
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a79439296ef4940158d6959d9b3112b6
+      spriteID: ac1744aba539a63eb9a36ff1786af0be
       vertices: []
       indices: 
       edges: []
@@ -1603,18 +1603,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_69
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a6fc2e9a1f97475f88a9770eb25ad97
+      spriteID: d005c527f5deb15c581339b6e699e3df
       vertices: []
       indices: 
       edges: []
@@ -1623,18 +1623,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_70
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3713691b5b8aa48cf8be5f9055d668d2
+      spriteID: cf2627d681b091777a700f58edb0c0c8
       vertices: []
       indices: 
       edges: []
@@ -1643,18 +1643,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_71
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d2f11f7ba7ee48df9b6fed517268e6c
+      spriteID: 12df79270a9796dc59093a8c4e02d142
       vertices: []
       indices: 
       edges: []
@@ -1663,18 +1663,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_72
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b461612f182c45d28b361b0f9db0d44
+      spriteID: 3bfaea9ef5f6c8f638f7d7bb8c27aa67
       vertices: []
       indices: 
       edges: []
@@ -1683,18 +1683,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_73
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08a213ccd02a49079abc71bf3c31735
+      spriteID: 99895eaed04ef16eaa818c6b9c001d39
       vertices: []
       indices: 
       edges: []
@@ -1703,18 +1703,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_74
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7862c428518294135a13bc4e62105c03
+      spriteID: a7366355d5ad01c4db499eab1ac1521a
       vertices: []
       indices: 
       edges: []
@@ -1723,18 +1723,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_75
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16bcaca053ea34e95af0af260190b5a6
+      spriteID: c469ee74ede66ed83a94a5b7db29312f
       vertices: []
       indices: 
       edges: []
@@ -1743,18 +1743,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_76
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e17ff3c54a3a43609483dbb0fab81e9
+      spriteID: 5462c71ca20325f72bf7ae6d8e99208b
       vertices: []
       indices: 
       edges: []
@@ -1763,18 +1763,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_77
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d192a9634a5646bcad1770b9ee555f1
+      spriteID: 3aecc6894ee615673ba91c3fa7090af5
       vertices: []
       indices: 
       edges: []
@@ -1783,18 +1783,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_78
       rect:
         serializedVersion: 2
-        x: 320
+        x: 322
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c622025a71d2a44f492ff3d1477f2ce1
+      spriteID: bf45741a9782c9c5b913373af864b08f
       vertices: []
       indices: 
       edges: []
@@ -1803,18 +1803,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_79
       rect:
         serializedVersion: 2
-        x: 352
+        x: 354
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f1b5d014d9174e82b36fa57f89f8a0f
+      spriteID: 9f530736e06021edeb905d4e5d418464
       vertices: []
       indices: 
       edges: []
@@ -1823,18 +1823,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_80
       rect:
         serializedVersion: 2
-        x: 384
+        x: 386
         y: 224
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee15707986b3843d6a78949182c05850
+      spriteID: 81e3574aeee791aeaa00fc6aa164720a
       vertices: []
       indices: 
       edges: []
@@ -1843,18 +1843,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_81
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fbb9bc701a634339aa29287b68fb89c
+      spriteID: 8f92fadadacd06c8b975472591cd9f8c
       vertices: []
       indices: 
       edges: []
@@ -1863,18 +1863,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_82
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c03c268a7ae449678cbb85b89341691
+      spriteID: 71ccdcc179ef2c69b99a8f669c8a7e06
       vertices: []
       indices: 
       edges: []
@@ -1883,18 +1883,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_83
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bb64ae8da30e401a96e425440586c1c
+      spriteID: 6bd7832102f0f839bbcdc90310b906d6
       vertices: []
       indices: 
       edges: []
@@ -1903,18 +1903,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_84
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d896c6044bbec40cba99b9ea60fc8fba
+      spriteID: 6de846cb570697755a312d18d082308e
       vertices: []
       indices: 
       edges: []
@@ -1923,18 +1923,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_85
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02e33cb256ea14f30977fb08011bcf1e
+      spriteID: 5e919807945af6cea9cc13df1b0d38c0
       vertices: []
       indices: 
       edges: []
@@ -1943,18 +1943,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_86
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1895dc2c720545d2baa2a6948ad1e96
+      spriteID: 5f6adf43ec80925ada35906d5071d14c
       vertices: []
       indices: 
       edges: []
@@ -1963,18 +1963,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_87
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bea52dbcc3734317a3e873d7e103bcd
+      spriteID: d7bce0d1a6fdc80fdaa608c67cdf9004
       vertices: []
       indices: 
       edges: []
@@ -1983,18 +1983,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_88
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 192
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78bc50e4f4904116ab6c8579e1fb20b
+      spriteID: 893873b2b1e76ddbe88ba62d180828dd
       vertices: []
       indices: 
       edges: []
@@ -2003,18 +2003,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_89
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7ee97cc5c6e4c768759c93f513a3a4
+      spriteID: ae3fe3a401a761444961d33caf0027a0
       vertices: []
       indices: 
       edges: []
@@ -2023,18 +2023,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_90
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fba963452a51147b0ab408d292d6bef2
+      spriteID: df30e67baf92f50439e1dfb6686b211f
       vertices: []
       indices: 
       edges: []
@@ -2043,18 +2043,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_91
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0cfc613c404d4c7380c145d5e739536
+      spriteID: 2b234a6356ddd0f8191458c014067486
       vertices: []
       indices: 
       edges: []
@@ -2063,18 +2063,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_92
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fe58211dcf8648b98d8dbb5963ab0d3
+      spriteID: 95ef16f7522e66e91b3bbc8b1c98ddbe
       vertices: []
       indices: 
       edges: []
@@ -2083,18 +2083,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_93
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c90fc263aff3145129a677f17ba5c9ff
+      spriteID: 5d13e3b9d5f90e23b86f157d16ef5c0d
       vertices: []
       indices: 
       edges: []
@@ -2103,18 +2103,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_94
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e352511c59024734be5d039749f9b09
+      spriteID: 53dcf1abc57b33c8fbfec84d9b5354b2
       vertices: []
       indices: 
       edges: []
@@ -2123,18 +2123,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_95
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ed8c54d7afb4d3bb0c5c71dccfe2cc
+      spriteID: 183277f6460ffee71991dadc0e5174fc
       vertices: []
       indices: 
       edges: []
@@ -2143,18 +2143,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_96
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 280bc06473e4941f9bde96e1a063278b
+      spriteID: 2ac4af91923f7981bb4075db4eee84a4
       vertices: []
       indices: 
       edges: []
@@ -2163,18 +2163,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_97
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eb4ab1cfd9224df49aed744842845af
+      spriteID: 3542c1182e185b6239b22c3210ed0fe2
       vertices: []
       indices: 
       edges: []
@@ -2183,18 +2183,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_98
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 160
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cdcb409fb845497dab36656176a729a
+      spriteID: 0395eae469b7e94c5a84436f4f08c9e5
       vertices: []
       indices: 
       edges: []
@@ -2203,18 +2203,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_99
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9183ff99130444ba9549b1bdf785a0
+      spriteID: ec537c26bc0b2b558b9a5910e1214bbb
       vertices: []
       indices: 
       edges: []
@@ -2223,18 +2223,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_100
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baff761e645fc4b78a813266d10175c7
+      spriteID: 3e92680e0d9e2702f8e540c83398b379
       vertices: []
       indices: 
       edges: []
@@ -2243,18 +2243,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_101
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 291e8da94e3084486a57a0a353980ad5
+      spriteID: 60363264b7e38a1f7a0f0ff5bf899c41
       vertices: []
       indices: 
       edges: []
@@ -2263,18 +2263,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_102
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eac17e0525d3f44de8554224fc7cac78
+      spriteID: 732ffa94f964449f890ede12edaabb97
       vertices: []
       indices: 
       edges: []
@@ -2283,18 +2283,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_103
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc11506a8c4484da6a4668ec4614da7d
+      spriteID: 491d3bf4346181498bbc9badb6760fe7
       vertices: []
       indices: 
       edges: []
@@ -2303,18 +2303,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_104
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f42a8ed909cfa4643a8808c69ee36254
+      spriteID: 0562e1faef790ebf1b7601fe78e86221
       vertices: []
       indices: 
       edges: []
@@ -2323,18 +2323,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_105
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb6b800af5b5c43c18b8259cfa4a1b18
+      spriteID: 536045c462734f3b687e1bfd14815c9f
       vertices: []
       indices: 
       edges: []
@@ -2343,18 +2343,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_106
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 856183f23198741d4943d05eb88444ca
+      spriteID: 2eccc451a648317099edec75173c8168
       vertices: []
       indices: 
       edges: []
@@ -2363,18 +2363,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_107
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3118f28177e1d4eb5afa9d0a047a953c
+      spriteID: c842045fa9edbee688df2ff4c4cb1bf0
       vertices: []
       indices: 
       edges: []
@@ -2383,18 +2383,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_108
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 128
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7f844b1583d24dfc8f74566d85fcbc6
+      spriteID: 27d912bf2839e0bc69928c31f34a9119
       vertices: []
       indices: 
       edges: []
@@ -2403,18 +2403,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_109
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8143cb759f6d4558b8c5ab848e605b7
+      spriteID: 361742666ac6909d8886ddb80dd19b7d
       vertices: []
       indices: 
       edges: []
@@ -2423,18 +2423,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_110
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b1c928bcdf04bc7805d789dcf15f31
+      spriteID: d21c3529d93eda008a056506f269e1f7
       vertices: []
       indices: 
       edges: []
@@ -2443,18 +2443,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_111
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 531be71ab407744d39918d4580ada07d
+      spriteID: 84a684377bed69c1d98119ece4045b54
       vertices: []
       indices: 
       edges: []
@@ -2463,18 +2463,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_112
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 818c6659a8b064c91bcc33973ab26aa4
+      spriteID: a987f9578f3765fdfbbc34999ef5b167
       vertices: []
       indices: 
       edges: []
@@ -2483,18 +2483,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_113
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa3e0258c318c404eb0aa765949c679d
+      spriteID: 812aec8fa47cb649b88f2f31bc90abfb
       vertices: []
       indices: 
       edges: []
@@ -2503,18 +2503,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_114
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76958e6faf8654442aed97ea20333477
+      spriteID: 642a9e236c26278f3ade6cc71274d531
       vertices: []
       indices: 
       edges: []
@@ -2523,18 +2523,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_115
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6711abbfa6b6149ad88793888d63d620
+      spriteID: e9c29dc619716d70dbd423c455f6fa5b
       vertices: []
       indices: 
       edges: []
@@ -2543,18 +2543,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_116
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a400b67d7d4ad46efafe7097aec47222
+      spriteID: 2a817b01abfea67af810be970ec10f7b
       vertices: []
       indices: 
       edges: []
@@ -2563,18 +2563,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_117
       rect:
         serializedVersion: 2
-        x: 256
+        x: 258
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c3aed324c64f4c76abeabe6541275bb
+      spriteID: 4b07a2f14db5dcfeb9edd0ec62ccd29f
       vertices: []
       indices: 
       edges: []
@@ -2583,18 +2583,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_118
       rect:
         serializedVersion: 2
-        x: 288
+        x: 290
         y: 96
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abcbbdaa5da994d29aef2e929d7fd3da
+      spriteID: 76caec5b1f2585037afa5009d3d0ed70
       vertices: []
       indices: 
       edges: []
@@ -2603,18 +2603,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_119
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a21ebcfb60d4416c99a879d6124038b
+      spriteID: 53433b7c8e93e8539a2d94888f1990f7
       vertices: []
       indices: 
       edges: []
@@ -2623,18 +2623,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_120
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc612f7a4ae9b49d1be34329924afdb6
+      spriteID: 0b01541290c204562926e53a0d1abe09
       vertices: []
       indices: 
       edges: []
@@ -2643,18 +2643,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_121
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7ac22011839a4a84a01e0fa8cad591f
+      spriteID: de3e22994a4b66df8a7187da6b6c0506
       vertices: []
       indices: 
       edges: []
@@ -2663,18 +2663,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_122
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5425b8046038d487ca625b9ce53d9182
+      spriteID: adc73eee63638e62492a24b4cf8b1cda
       vertices: []
       indices: 
       edges: []
@@ -2683,18 +2683,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_123
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7426059e788ba46838fed542848c2306
+      spriteID: 23401385480df0f33b5810167b7d7a1c
       vertices: []
       indices: 
       edges: []
@@ -2703,18 +2703,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_124
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 64
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d141b78365be84a798b37ade342427e2
+      spriteID: 52b47611d723da0568d08ed332f7d02c
       vertices: []
       indices: 
       edges: []
@@ -2723,18 +2723,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_125
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 32
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c57fdc67d5ae3445bbb00d49e2f11009
+      spriteID: 42a3819e0a3cf10d89660eda020edb40
       vertices: []
       indices: 
       edges: []
@@ -2743,18 +2743,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_126
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 32
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac1b58c65917424e828c2a42b7a9a98
+      spriteID: 9833c5c2167f0720197880ca01ecf574
       vertices: []
       indices: 
       edges: []
@@ -2763,18 +2763,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_127
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 32
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b714e8a5d797c436382d8bee26609bc9
+      spriteID: 90d725a8dd85c1f00a466c7e6c9105e5
       vertices: []
       indices: 
       edges: []
@@ -2783,18 +2783,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_128
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 32
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d94fb85126d74fb3abacd5fb3569540
+      spriteID: 03d93f743aff4caafbb65fe7ec3d5b0a
       vertices: []
       indices: 
       edges: []
@@ -2803,18 +2803,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_129
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92c3283cd7c2549ec842421fe0403fd0
+      spriteID: 5f0c47b7fd110c6fba63fb3217aba9d2
       vertices: []
       indices: 
       edges: []
@@ -2823,18 +2823,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_130
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d65f0c842569e416982ad8eb3a95a2af
+      spriteID: f54a430ff6d1c860bbf7a5cd37f1be42
       vertices: []
       indices: 
       edges: []
@@ -2843,18 +2843,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_131
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6340c5997ac834026b8abc3236668eb6
+      spriteID: de158a172dd59a71bbf51081fcbcd646
       vertices: []
       indices: 
       edges: []
@@ -2863,18 +2863,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_132
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ea3b0a96e3a84cd6b28be643e787f62
+      spriteID: 699d9775669536a069729881bf4a0b21
       vertices: []
       indices: 
       edges: []
@@ -2883,18 +2883,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_133
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fffac82862b5649c286fb3b063d91860
+      spriteID: 25a7c9b8e2aa42b9b8b90cac49960cd5
       vertices: []
       indices: 
       edges: []
@@ -2903,18 +2903,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_134
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4526c4e74dda14b48b3089c19893ff18
+      spriteID: 496c6e53cdf6d2b81b7a9f543daeb2b1
       vertices: []
       indices: 
       edges: []
@@ -2923,18 +2923,18 @@ TextureImporter:
       name: Adventurer Sprite Sheet v1.1_135
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 0
-        width: 32
-        height: 32
-      alignment: 1
-      pivot: {x: 0, y: 1}
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4796ba72382142efab83957fa431709
+      spriteID: 44d5af818028948ff9271007eb378343
       vertices: []
       indices: 
       edges: []
