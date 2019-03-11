@@ -194,8 +194,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   flashlight: {fileID: 68909532}
-  velocity: {x: 0, y: 0, z: 0}
-  targetCoin: {fileID: 0}
+  rotationSpeed: 10
 --- !u!61 &2073463740
 BoxCollider2D:
   m_ObjectHideFlags: 0
