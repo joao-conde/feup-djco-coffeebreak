@@ -5,22 +5,25 @@ using UnityEngine;
 public class GuardController : AIController{
 
     public Light flashlight;
-    public Vector3 velocity;
 
-    public GameObject targetCoin = null;
+    public float rotationSpeed;
+
+    private GameObject targetCoin = null;
     private float stopThreshold = 0.20f;
     
     // Start is called before the first frame update
 
     protected override void Start(){ 
         base.Start();
-        velocity = agent.velocity;
+        
     }
 
     // Update is called once per frame
     protected override void Update()
     {
        base.Update();
+       Vector3 direction = Vector3.Normalize(agent.velocity);
+       flashlight.transform.forward = Vector3.RotateTowards(flashlight.transform.forward,direction,rotationSpeed*Time.deltaTime,0.0f);
        HandleDistraction();
     }
 
