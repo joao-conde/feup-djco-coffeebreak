@@ -40,9 +40,11 @@ public class Player : MonoBehaviour {
                 coinToss = null;
             }
         } else if (Input.GetButtonDown ("Fire1") && coins > 0) {
-            coinToss = Instantiate (coinPrefab, transform.position + new Vector3 (lastMove.x, lastMove.y, 0), Quaternion.identity);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector3 direction = ray.origin - transform.position;
+            coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
-            coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
+            coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
         }
     }
