@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using static Player;
+
 public class GuardController : AIController {
 
     public Light flashlight;
@@ -41,6 +43,14 @@ public class GuardController : AIController {
             if(col.tag == "Coin" && targetCoin == null){ 
                 targetCoin = col.gameObject;
             }
+
+            else if(col.tag == "Player"){
+                Player playerController = (Player)col.gameObject.GetComponent("Player");
+                if(!playerController.IsStealth()){
+                    agent.SetDestination(col.gameObject.transform.position);
+                }
+            }
+                
         }
 
         if (targetCoin != null) {

@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -150,18 +150,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 288
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc475fc6cf517406c97dbbf0c983cc70
+      spriteID: 3c1548edd92c70d2bb09e0ef2e731f5f
       vertices: []
       indices: 
       edges: []
@@ -170,18 +170,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 288
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 065fca822691c42f38fe9436b73091c9
+      spriteID: 6da67090142570a12b6920097bde03ce
       vertices: []
       indices: 
       edges: []
@@ -190,18 +190,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 288
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e933653ad8434f848383d2d1060b0fd
+      spriteID: d3b735edcefa6eef48703da7cf005e11
       vertices: []
       indices: 
       edges: []
@@ -210,18 +210,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 288
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a6e252070a8749fba01329455eaac2e
+      spriteID: e6b1a2458c7487f948a937d76f798a44
       vertices: []
       indices: 
       edges: []
@@ -230,18 +230,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_4
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 288
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2eef35124a59e41218c7505064458e11
+      spriteID: 6650d5042ac464d14b4560cf5ab711cf
       vertices: []
       indices: 
       edges: []
@@ -250,18 +250,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef2063b3754d347438a00455e9565df5
+      spriteID: 4772fc4531253cb7ba80ca5b8218712c
       vertices: []
       indices: 
       edges: []
@@ -270,18 +270,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_6
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eceb140ae47b54ad1bd70c05b15dd42c
+      spriteID: 99aeecfe9be6cfe8d90c6cb5cc416a52
       vertices: []
       indices: 
       edges: []
@@ -290,18 +290,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c64ff6e563932486f8fe17e0597bc721
+      spriteID: 3c8a4adb8609040d59669edb0150cf8a
       vertices: []
       indices: 
       edges: []
@@ -310,18 +310,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_8
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f4b7c8fd53fb4f1496fc85efd82828c
+      spriteID: c72468034d75194ed9c5eb21f5f022a5
       vertices: []
       indices: 
       edges: []
@@ -330,18 +330,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_9
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a3393d6c47a4df6b0adbe7aa8bfb79
+      spriteID: 5c335b850f0e4f637880e46d66dbc5c9
       vertices: []
       indices: 
       edges: []
@@ -350,18 +350,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_10
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46f54738a60ee463885ee4f063a35dc4
+      spriteID: 33e968d631004ecf8b12c4a5a1012832
       vertices: []
       indices: 
       edges: []
@@ -370,18 +370,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_11
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57f76b9ba67c242a3a158742f43174b0
+      spriteID: f556caa71861496aa82aeed9d637fdea
       vertices: []
       indices: 
       edges: []
@@ -390,18 +390,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_12
       rect:
         serializedVersion: 2
-        x: 224
+        x: 226
         y: 256
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e9f4f0a982bd4990a27bda31e952590
+      spriteID: 47d7047b3055661b79f40795f8b116c0
       vertices: []
       indices: 
       edges: []
@@ -410,18 +410,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_13
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9689ef16c4d244d259d69c480e55f8aa
+      spriteID: aac6e78bbe8f33b3da606e0ed54cf54e
       vertices: []
       indices: 
       edges: []
@@ -430,18 +430,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e57960df85c4d76bc625935d65af89
+      spriteID: 04fff0faaeebf5b02820c5bd8584b31c
       vertices: []
       indices: 
       edges: []
@@ -450,18 +450,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_15
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38c575f5c6da74d14a3cbb0877f6b2c3
+      spriteID: 0ca5e1117ee1047ef9e553cd904b757c
       vertices: []
       indices: 
       edges: []
@@ -470,18 +470,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_16
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 317fd520ed28242c0a319e5c31c75486
+      spriteID: 97e3c74273bac23cba2dd95bdefc01fc
       vertices: []
       indices: 
       edges: []
@@ -490,18 +490,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_17
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cee666384addd42cbba160686e6ac87d
+      spriteID: 08faa5a0fe8c98caf9f5ad7fee98cfeb
       vertices: []
       indices: 
       edges: []
@@ -510,18 +510,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_18
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0da43917fa46b459084fd48165e3d23a
+      spriteID: e171501616569238cb2fc26ae2ca5ccf
       vertices: []
       indices: 
       edges: []
@@ -530,18 +530,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_19
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 224
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b6938b556cc947ce9c85b084cfccf18
+      spriteID: f49e135b5e09bfd74b6318cb6d954fd6
       vertices: []
       indices: 
       edges: []
@@ -550,18 +550,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_20
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 192
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128033cc8e0544ae68c6c7b84edc6727
+      spriteID: 6beb5b75d107866f2bcc9e340b71c1c8
       vertices: []
       indices: 
       edges: []
@@ -570,18 +570,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_21
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 192
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72d9139705b2d49c8aeb15226b4d1787
+      spriteID: b8846a67ad63bf3cb8cf87ec3e3d5b2a
       vertices: []
       indices: 
       edges: []
@@ -590,18 +590,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_22
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 192
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45c9a2112ac7640b2a6c07589d9a967b
+      spriteID: e253316e0d2844cf7b1a5d5f56e53f9f
       vertices: []
       indices: 
       edges: []
@@ -610,18 +610,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_23
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 192
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d4e5f41dca7649aa87345e1ac903c1d
+      spriteID: 03eb636842efcbe5d963e3609c04d556
       vertices: []
       indices: 
       edges: []
@@ -630,18 +630,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_24
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e37bb1f14f9f4389a6813c904a1875a
+      spriteID: c65b9a6534c2d5feba164281ea130f79
       vertices: []
       indices: 
       edges: []
@@ -650,18 +650,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_25
       rect:
         serializedVersion: 2
-        x: 32
+        x: 34
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3f2dfa105c7240ce96f2ba009fb8a53
+      spriteID: 9e4f9ec830ee0da8b89e4c1bcd3cfa7a
       vertices: []
       indices: 
       edges: []
@@ -670,18 +670,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_26
       rect:
         serializedVersion: 2
-        x: 64
+        x: 66
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79bcb75a4579545888371c8ee417c808
+      spriteID: c7522246d0f7f89668f459ffb82cdf62
       vertices: []
       indices: 
       edges: []
@@ -690,18 +690,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_27
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa829cb8c9f294f7ea4e3d972f0beb6c
+      spriteID: dea0183578064e1428ef85418df897cd
       vertices: []
       indices: 
       edges: []
@@ -710,18 +710,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_28
       rect:
         serializedVersion: 2
-        x: 128
+        x: 130
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6589b513e453c47dcb7648ba71f2855b
+      spriteID: 8d024f789f88675ebb0df063dae98162
       vertices: []
       indices: 
       edges: []
@@ -730,18 +730,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_29
       rect:
         serializedVersion: 2
-        x: 160
+        x: 162
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4eb5096a07d6647389ceae42440d7144
+      spriteID: 6588cc006f9fca150b37c69164b636bf
       vertices: []
       indices: 
       edges: []
@@ -750,18 +750,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_30
       rect:
         serializedVersion: 2
-        x: 192
+        x: 194
         y: 160
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d86d2ee11f94497f82c0d8261bd4a5a
+      spriteID: 442c98f9a0bfcd9a2b8e353d5809a833
       vertices: []
       indices: 
       edges: []
@@ -770,18 +770,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 160
-        width: 32
-        height: 32
+        x: 2
+        y: 128
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 72bc84822d340472c8946afa39dbca22
+      spriteID: 25fe0c2ebac5a8ca0b522d0e79f8bb78
       vertices: []
       indices: 
       edges: []
@@ -790,18 +790,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_32
       rect:
         serializedVersion: 2
-        x: 0
+        x: 34
         y: 128
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 573a3d52545de41b0a18a754479690a9
+      spriteID: d4a54e26ebd357c95a47bfdea399766b
       vertices: []
       indices: 
       edges: []
@@ -810,18 +810,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_33
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 128
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 529a50ba5aa5d40bba795afd4683f38b
+      spriteID: 98b8116f830ccb3c6bed0d5fff724ff7
       vertices: []
       indices: 
       edges: []
@@ -830,18 +830,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_34
       rect:
         serializedVersion: 2
-        x: 64
+        x: 98
         y: 128
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ea601c695d7e4a30bfa34f994895c8c
+      spriteID: b46a3c50bcb1b502890590359de4c1d8
       vertices: []
       indices: 
       edges: []
@@ -850,18 +850,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_35
       rect:
         serializedVersion: 2
-        x: 96
+        x: 130
         y: 128
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9d34bd6411b54d25b2183f7289b596a
+      spriteID: fc055f599f4888d60849c147c96791b1
       vertices: []
       indices: 
       edges: []
@@ -870,18 +870,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_36
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 32
-        height: 32
+        x: 2
+        y: 96
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 336a377c3926a475e93f0d9d1f5a74fa
+      spriteID: 81e25542729c3dd0982edfd9cfac08d4
       vertices: []
       indices: 
       edges: []
@@ -890,18 +890,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_37
       rect:
         serializedVersion: 2
-        x: 0
+        x: 34
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b05026f62b7284f4384f7e57064ad03c
+      spriteID: ab80820c96b71235ea43cb12f0dc02a6
       vertices: []
       indices: 
       edges: []
@@ -910,18 +910,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_38
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f551403533e849988158676640e39d4
+      spriteID: 9257dcaea21af62bd88e4b2712b109e1
       vertices: []
       indices: 
       edges: []
@@ -930,18 +930,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_39
       rect:
         serializedVersion: 2
-        x: 64
+        x: 98
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2ccbfe92a8146e6b24ca4bf62c8a1a
+      spriteID: 7e1457f92d5ccd0548dbbf58907fc2b1
       vertices: []
       indices: 
       edges: []
@@ -950,18 +950,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_40
       rect:
         serializedVersion: 2
-        x: 96
+        x: 130
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10fec7a1eb9294ce695ad7b9c407686a
+      spriteID: 2f7f36e29b5572894acc860cf1ff08cb
       vertices: []
       indices: 
       edges: []
@@ -970,18 +970,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_41
       rect:
         serializedVersion: 2
-        x: 128
+        x: 162
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eb0febf9f547432e9c1e09a3d519d27
+      spriteID: a135d6d8395554f23b1bec9a21bdd021
       vertices: []
       indices: 
       edges: []
@@ -990,18 +990,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_42
       rect:
         serializedVersion: 2
-        x: 160
+        x: 194
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a528bde1f4f34a0ba17c006bc754d1e
+      spriteID: acfaf15f73593f0f3b5e86c27ee71c05
       vertices: []
       indices: 
       edges: []
@@ -1010,18 +1010,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_43
       rect:
         serializedVersion: 2
-        x: 192
+        x: 226
         y: 96
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b528980b6ae34e40a3c80b047ab20a9
+      spriteID: acae8a855c69e94389ca4bf5f47d9d40
       vertices: []
       indices: 
       edges: []
@@ -1030,18 +1030,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_44
       rect:
         serializedVersion: 2
-        x: 224
-        y: 96
-        width: 32
-        height: 32
+        x: 2
+        y: 64
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5712eada099754736a06aaa764241df8
+      spriteID: 4a3983b18b600dbd6b5aef1296d675be
       vertices: []
       indices: 
       edges: []
@@ -1050,18 +1050,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_45
       rect:
         serializedVersion: 2
-        x: 0
+        x: 34
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cd8aa7acc1e34fc5a63b78ac8d59144
+      spriteID: 4166d243fe3439f6eb8849bb08688fbe
       vertices: []
       indices: 
       edges: []
@@ -1070,18 +1070,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_46
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba4521a3b9f224b7d9e479539bc5eaf5
+      spriteID: d204ab4be61e3c140904d0e57510ee17
       vertices: []
       indices: 
       edges: []
@@ -1090,18 +1090,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_47
       rect:
         serializedVersion: 2
-        x: 64
+        x: 98
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a353dfa1f8541b7a8f3a3bb1eb5a0c
+      spriteID: f6c93371677c5a94297089d7f455d7c7
       vertices: []
       indices: 
       edges: []
@@ -1110,18 +1110,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_48
       rect:
         serializedVersion: 2
-        x: 96
+        x: 130
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634d4f9faff0042e292f5acdd5356ed0
+      spriteID: b4e6627fea99fd090bcb2cd2ae3438bb
       vertices: []
       indices: 
       edges: []
@@ -1130,18 +1130,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_49
       rect:
         serializedVersion: 2
-        x: 128
+        x: 162
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a745d379b7d1d4750b30f17d1b6ec052
+      spriteID: 7e6331f7242cd6313afd67b24b55b4a8
       vertices: []
       indices: 
       edges: []
@@ -1150,18 +1150,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_50
       rect:
         serializedVersion: 2
-        x: 160
+        x: 194
         y: 64
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1656831daa0da4bd7a7836884e43fdcd
+      spriteID: 41ee90c650e4b011084091c82060f2c5
       vertices: []
       indices: 
       edges: []
@@ -1170,18 +1170,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_51
       rect:
         serializedVersion: 2
-        x: 192
-        y: 64
-        width: 32
-        height: 32
+        x: 2
+        y: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7749ac788d5fe4c52a8700e4b96af0d1
+      spriteID: dda357f705825443c951e307f0215045
       vertices: []
       indices: 
       edges: []
@@ -1190,18 +1190,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_52
       rect:
         serializedVersion: 2
-        x: 0
+        x: 34
         y: 32
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 546be9f14d99645539f78fcfe3ce1832
+      spriteID: 08960728636da6f92b6ac7f18ba55936
       vertices: []
       indices: 
       edges: []
@@ -1210,18 +1210,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_53
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 32
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62b3815b99dd049cfbbd262505a75f6a
+      spriteID: 32308a26622babba59cdd01565c04889
       vertices: []
       indices: 
       edges: []
@@ -1230,18 +1230,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_54
       rect:
         serializedVersion: 2
-        x: 64
+        x: 98
         y: 32
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b91c9fce7e4b344b19697b5088b11a67
+      spriteID: e75b71ab89b0244c1b8829bf9adccc34
       vertices: []
       indices: 
       edges: []
@@ -1250,18 +1250,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_55
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 2
+        y: 0
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c29b544a5be94d69b03145cc9176941
+      spriteID: bec37744631edb09090210ffcdb158ad
       vertices: []
       indices: 
       edges: []
@@ -1270,18 +1270,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_56
       rect:
         serializedVersion: 2
-        x: 0
+        x: 34
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 418f820a9d0eb4675aa39befc4a8b0bd
+      spriteID: 304f8e7299513285dafb4dea0da0d7c5
       vertices: []
       indices: 
       edges: []
@@ -1290,18 +1290,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_57
       rect:
         serializedVersion: 2
-        x: 32
+        x: 66
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4765b5dbe9c5b4a7892030fe0dd98088
+      spriteID: 0b5a55c3e70fa9c77950cb77abaa323c
       vertices: []
       indices: 
       edges: []
@@ -1310,18 +1310,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_58
       rect:
         serializedVersion: 2
-        x: 64
+        x: 98
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f36f20b9701044c5a8dbf83c8b731d5
+      spriteID: b4feac25c6cf879f9aacb7e66ebc3d0b
       vertices: []
       indices: 
       edges: []
@@ -1330,18 +1330,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_59
       rect:
         serializedVersion: 2
-        x: 96
+        x: 130
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 542846865dc034407abf4a9a327457cc
+      spriteID: 00ad665bc5bc3cb8f847f5b39340df51
       vertices: []
       indices: 
       edges: []
@@ -1350,18 +1350,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_60
       rect:
         serializedVersion: 2
-        x: 128
+        x: 162
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fdd2e49ea74b4b9c824abd406fa589f
+      spriteID: c5a68c692fac4c3098b39f3c34338de3
       vertices: []
       indices: 
       edges: []
@@ -1370,38 +1370,18 @@ TextureImporter:
       name: Dwarf Sprite Sheet_61
       rect:
         serializedVersion: 2
-        x: 160
+        x: 194
         y: 0
-        width: 32
-        height: 32
+        width: 28
+        height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec55e2afdf29f48938feb599ef4c1e26
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dwarf Sprite Sheet_62
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2eb87df289ca408e852d4a408fb6eb9
+      spriteID: e44279be490f12ecaadbc04c30cc1bb3
       vertices: []
       indices: 
       edges: []

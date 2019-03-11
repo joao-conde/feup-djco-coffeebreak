@@ -37,8 +37,8 @@ public class JanitorController : AIController
 
             //on bin, pick it up m' lady
             if(agent.remainingDistance < 1f){
-                TrashBinController bin = (TrashBinController)targetBin.GetComponent("TrashBinController");
-                bin.PickupBin();
+                TrashBinController binController = (TrashBinController)targetBin.GetComponent("TrashBinController");
+                binController.PickupBin();
                 targetBin = null;
             } 
         }

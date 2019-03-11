@@ -8,17 +8,18 @@ public class Player : MonoBehaviour {
 
     public float throwForce;
     public Transform coinPrefab;
+    public float moveSpeed;
+
     private int coins;
     private Transform coinToss = null;
     private float stopThreshold = 0.5f;
-
-    public float moveSpeed;
     private Animator playerAnimator;
     private bool hasCup = false, hasCard = false;
     private GameObject interactiveObject;
     private bool playerMoving;
     private Vector2 lastMove;
     private Rigidbody2D rb;
+    private bool isStealth = false;
 
     private void Start () {
         coins = GameManager.instance.initialPlayerCoins;
@@ -41,7 +42,7 @@ public class Player : MonoBehaviour {
         } else if (Input.GetButtonDown ("Fire1") && coins > 0) {
             coinToss = Instantiate (coinPrefab, transform.position + new Vector3 (lastMove.x, lastMove.y, 0), Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
-            coinToss.GetComponent<Rigidbody2D> ().AddForce (Vector3.Scale (new Vector3 (throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
+            coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), lastMove), ForceMode2D.Impulse);
             coins--;
         }
     }
@@ -60,8 +61,10 @@ public class Player : MonoBehaviour {
 
             if (Input.GetButton ("SlowMovement")) {
                 transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed / 2f * Time.deltaTime);
+                isStealth = true;
             } else {
                 transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed * Time.deltaTime);
+                isStealth = false;
             }
         }
 
@@ -69,8 +72,10 @@ public class Player : MonoBehaviour {
             lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
             if (Input.GetButton ("SlowMovement")) {
                 transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed / 2f * Time.deltaTime);
+                isStealth = true;
             } else {
                 transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed * Time.deltaTime);
+                isStealth = false;
             }
         }
 
@@ -98,6 +103,7 @@ public class Player : MonoBehaviour {
             Destroy (other.gameObject);
             hasCup = true;
         }
+
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
@@ -114,4 +120,7 @@ public class Player : MonoBehaviour {
         }
     }
 
+    public bool IsStealth(){
+        return isStealth;
+    }
 }
