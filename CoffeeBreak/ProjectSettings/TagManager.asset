@@ -11,6 +11,7 @@ TagManager:
   - TrashBin
   - Ground
   - Wall
+  - ThrownCoin
   layers:
   - Default
   - TransparentFX

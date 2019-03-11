@@ -1,7 +1,7 @@
 TODO LIST BY PRIORITY:
 
-1. *Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele* :heavy_check_mark:
-2. Guarda nao pode apanhar todas as moedas, so as atiradas.
+1. :heavy_check_mark: *Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele*
+2. :heavy_check_mark: *Guarda nao pode apanhar todas as moedas, so as atiradas* 
 3. Glowing e destaque de objetos que permitem interaçao
 4. UI/Menus
 5. Level design

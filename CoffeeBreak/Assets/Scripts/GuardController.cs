@@ -40,7 +40,7 @@ public class GuardController : AIController {
         Debug.DrawLine(transform.position, transform.position + new Vector3(awerenessRadius, awerenessRadius, 0)); //comment for test
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, awerenessRadius);
         foreach(Collider2D col in hitColliders){
-            if(col.tag == "Coin" && targetCoin == null){ 
+            if(col.tag == "ThrownCoin" && targetCoin == null){ 
                 targetCoin = col.gameObject;
             }
 

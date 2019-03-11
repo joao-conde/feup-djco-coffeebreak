@@ -44,6 +44,7 @@ public class Player : MonoBehaviour {
             Vector3 direction = ray.origin - transform.position;
             coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
+            coinToss.tag = "ThrownCoin";
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
         }
@@ -96,7 +97,7 @@ public class Player : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D (Collider2D other) {
-        if (other.gameObject.CompareTag ("Coin")) {
+        if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
         }
