@@ -9,6 +9,8 @@ TagManager:
   - Card
   - Doors
   - TrashBin
+  - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX

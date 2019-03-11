@@ -122,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 82399425}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Patrol Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221200329}
   - component: {fileID: 221200328}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: WalkableSurface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724620493}
   - component: {fileID: 724620492}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 1170824175}
   m_Layer: 0
   m_Name: Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1032,7 +1032,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 92276f05be74ff54b8cf240f1982325d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1051,7 +1051,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -227804789
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2617,9 +2617,9 @@ GameObject:
   - component: {fileID: 1214587611}
   - component: {fileID: 1214587610}
   - component: {fileID: 1214587612}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2655,7 +2655,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 92276f05be74ff54b8cf240f1982325d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2672,8 +2672,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -227804789
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -5857,7 +5857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1563494736}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Patrol Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5917,7 +5917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1716305176}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Patrol Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6100,7 +6100,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1850505828}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Patrol Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6482,36 +6482,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900910, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1386452539
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900910, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900911, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_AutoBraking
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900911, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_Speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900911, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_AngularSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6974455132700900911, guid: f238bd6b3c6d4b84497ff2d4badead27,
-        type: 3}
-      propertyPath: m_Acceleration
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 6974455132700900897, guid: f238bd6b3c6d4b84497ff2d4badead27,
         type: 3}
       propertyPath: points.Array.data[0]
@@ -6522,14 +6492,6 @@ PrefabInstance:
       propertyPath: points.Array.data[1]
       value: 
       objectReference: {fileID: 203868056}
-    - target: {fileID: 1561618681, guid: f238bd6b3c6d4b84497ff2d4badead27, type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561618681, guid: f238bd6b3c6d4b84497ff2d4badead27, type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f238bd6b3c6d4b84497ff2d4badead27, type: 3}
 --- !u!1001 &7112436333090448520
@@ -6615,13 +6577,5 @@ PrefabInstance:
       propertyPath: points.Array.data[3]
       value: 
       objectReference: {fileID: 1850505828}
-    - target: {fileID: 2073463736, guid: 54bb3b9afd2a29848992f339506b5f5b, type: 3}
-      propertyPath: rotationSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 68909532, guid: 54bb3b9afd2a29848992f339506b5f5b, type: 3}
-      propertyPath: m_SpotAngle
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54bb3b9afd2a29848992f339506b5f5b, type: 3}
