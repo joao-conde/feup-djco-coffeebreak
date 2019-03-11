@@ -12,15 +12,21 @@ public class TrashBinController : MonoBehaviour{
         this.isOnFloor = false;
     }
 
-    public void Interact(){
+    public void DropBin(){
         if(!isOnFloor){
             isOnFloor = true;
             transform.Rotate(0, 0, -90);
         }
-        else{
+    }
+    
+    public void PickupBin(){
+        if(isOnFloor){
             isOnFloor = false;
             transform.Rotate(0, 0, 90);
         }
     }
 
+    public bool IsOnFloor(){
+        return isOnFloor;
+    }
 }

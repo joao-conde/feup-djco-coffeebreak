@@ -2,64 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using static TrashBinController;
+
 public class JanitorController : AIController
 {
-    enum janitorState
-    {
-        patroling,
-        cleaning,
-    }
+    
+    public GameObject targetBin = null;
 
-    private janitorState state;
-    private void MakeDecision()
-    {
-        switch (state){
-            case janitorState.patroling:
-                Patrol();
-                break;
-            case janitorState.cleaning:
-                Clean();
-                break;
-        }
-    }
-    // Start is called before the first frame update
-    protected override void Start()
-    {
-        state = janitorState.patroling;
+    protected override void Start(){
         base.Start();
     }
 
-    // Update is called once per frame
-    protected override void Update()
-    {
-        MakeDecision();
-
-        //Debug.Log(agent.hasPath);
-
-        if (target != null)
-        {
-            agent.SetDestination(target);
+    protected override void Update(){
+        base.Update();
+        HandleTrashBins();
+    }
+    
+    private void HandleTrashBins(){
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(transform.position, 2);
+        foreach(Collider2D col in hitColliders){
+            if(col.tag == "TrashBin"){ 
+                TrashBinController bin = (TrashBinController)col.gameObject.GetComponent("TrashBinController");
+                if(bin.IsOnFloor() && targetBin == null){
+                    targetBin = col.gameObject;
+                }
+            }
         }
 
-        if (Vector3.Distance(target, transform.position) < agent.stoppingDistance)
-        {
-            agent.SetDestination(transform.position);
-        }
-    }
+        if(targetBin != null){
+            agent.SetDestination(targetBin.GetComponent<Transform>().position);
 
-    private void Clean()
-    {
-
-    }
-
-    private void Patrol()
-    {
-        // Choose the next destination point when the agent gets
-        // close to the current one.
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
-        {
-            GotoNextPoint();
-
+            //on bin, pick it up m' lady
+            if(agent.remainingDistance < 1f){
+                TrashBinController bin = (TrashBinController)targetBin.GetComponent("TrashBinController");
+                bin.PickupBin();
+                targetBin = null;
+            } 
         }
     }
 }

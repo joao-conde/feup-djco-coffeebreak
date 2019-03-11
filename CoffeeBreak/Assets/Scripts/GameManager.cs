@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour{
 
     public static GameManager instance = null;
     public int initialPlayerCoins = 0;
-    private int level = 1;
+    // private int level = 1;
     private bool doingSetup;
 
 
