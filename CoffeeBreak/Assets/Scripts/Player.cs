@@ -30,9 +30,9 @@ public class Player : MonoBehaviour {
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         rb = GetComponent<Rigidbody2D> ();
-        coinsLabel = GameObject.Find("CoinsLabel").GetComponent<Text>();
-        cupLabel = GameObject.Find("CupLabel").GetComponent<Text>();
-        cardLabel = GameObject.Find("CardLabel").GetComponent<Text>();
+        coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
+        cupLabel = GameObject.Find ("CupLabel").GetComponent<Text> ();
+        cardLabel = GameObject.Find ("CardLabel").GetComponent<Text> ();
     }
 
     private void Update () {
@@ -48,7 +48,7 @@ public class Player : MonoBehaviour {
                 coinToss = null;
             }
         } else if (Input.GetButtonDown ("Fire1") && coins > 0) {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
             Vector3 direction = ray.origin - transform.position;
             coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
@@ -64,7 +64,7 @@ public class Player : MonoBehaviour {
         playerAnimator.ResetTrigger ("playerRight");
 
         if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f) {
-            lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f);
+            lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
             if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
                 playerAnimator.SetTrigger ("playerLeft");
             } else if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour {
         }
 
         if (Input.GetAxisRaw ("Vertical") > 0.5f || Input.GetAxisRaw ("Vertical") < -0.5f) {
-            lastMove = new Vector2(0f, Input.GetAxisRaw("Vertical"));
+            lastMove = new Vector2 (0f, Input.GetAxisRaw ("Vertical"));
             if (Input.GetButton ("SlowMovement")) {
                 transform.Translate (new Vector3 (0f, Input.GetAxisRaw ("Vertical"), 0f) * moveSpeed / 2f * Time.deltaTime);
                 isStealth = true;
@@ -93,15 +93,15 @@ public class Player : MonoBehaviour {
 
         if (Input.GetButtonDown ("Interact")) {
             if (interactiveObject != null) {
-            
-                if (interactiveObject.CompareTag ("Doors") && hasCard){
-                    DoorController doorController = (DoorController)interactiveObject.GetComponent("DoorController");
-                    doorController.Interact();
+
+                if (interactiveObject.CompareTag ("Doors") && hasCard) {
+                    DoorController doorController = (DoorController) interactiveObject.GetComponent ("DoorController");
+                    doorController.Interact ();
                 }
 
-                if (interactiveObject.CompareTag ("TrashBin")){
-                    TrashBinController binController = (TrashBinController)interactiveObject.GetComponent("TrashBinController");
-                    binController.DropBin();
+                if (interactiveObject.CompareTag ("TrashBin")) {
+                    TrashBinController binController = (TrashBinController) interactiveObject.GetComponent ("TrashBinController");
+                    binController.DropBin ();
                 }
 
                 //extendable to the coffee machine
@@ -130,8 +130,8 @@ public class Player : MonoBehaviour {
 
         if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = other.gameObject;
-            HighlightController lightController = (HighlightController)interactiveObject.GetComponentsInChildren<HighlightController>()[0];
-            StartCoroutine(lightController.FlashNow());
+            HighlightController lightController = (HighlightController) interactiveObject.GetComponentsInChildren<HighlightController> () [0];
+            StartCoroutine (lightController.FlashNow ());
         }
     }
 
@@ -141,7 +141,7 @@ public class Player : MonoBehaviour {
         }
     }
 
-    public bool IsStealth(){
+    public bool IsStealth () {
         return isStealth;
     }
 }
