@@ -29,7 +29,7 @@ public class GuardController : AIController {
         Debug.DrawLine ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, (Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized * 4.5f);
         if (hit.collider != null) {
             if (hit.collider.CompareTag ("Player")) {
-                //Debug.Log("Saw player");
+                target = hit.transform.position;
             }
         }
     }
@@ -43,7 +43,7 @@ public class GuardController : AIController {
             } else if (col.tag == "Player") {
                 Player playerController = (Player) col.gameObject.GetComponent ("Player");
                 if (!playerController.IsStealth ()) {
-                    agent.SetDestination (col.gameObject.transform.position);
+                    target = col.gameObject.transform.position;
                 }
             }
 
@@ -54,7 +54,7 @@ public class GuardController : AIController {
 
             //stopped coin
             if (rbCoin.velocity.x <= stopThreshold && rbCoin.velocity.y <= stopThreshold) {
-                agent.SetDestination (rbCoin.position);
+                target = rbCoin.position;
             }
 
             //on coin

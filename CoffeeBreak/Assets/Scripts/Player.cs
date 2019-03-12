@@ -128,7 +128,11 @@ public class Player : MonoBehaviour {
             cardLabel.text = "Card picked up!";
         }
 
-        if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("TrashBin")) {
+        if (other.gameObject.CompareTag ("Doors")){
+            interactiveObject = other.gameObject;
+        } 
+
+        if(other.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = other.gameObject;
             HighlightController lightController = (HighlightController) interactiveObject.GetComponentsInChildren<HighlightController> () [0];
             StartCoroutine (lightController.FlashNow ());
