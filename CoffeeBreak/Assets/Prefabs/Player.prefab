@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 3265859098755676245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   throwForce: 15
   coinPrefab: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
     type: 3}
-  moveSpeed: 10
+  moveSpeed: 4
 --- !u!61 &5698651495259056548
 BoxCollider2D:
   m_ObjectHideFlags: 0
