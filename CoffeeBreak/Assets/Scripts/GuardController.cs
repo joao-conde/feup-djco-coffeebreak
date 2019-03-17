@@ -4,6 +4,7 @@ using UnityEngine;
 
 using static Player;
 
+
 public class GuardController : AIController {
 
     public Light flashlight;
