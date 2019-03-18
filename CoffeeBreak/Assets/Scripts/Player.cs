@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
     public Transform coinPrefab;
     public float moveSpeed;
 
+    public Transform respawnPoint;
+
     private int coins;
     private Transform coinToss = null;
     private float stopThreshold = 0.5f;
@@ -23,13 +25,19 @@ public class Player : MonoBehaviour {
     private bool playerMoving;
     private Vector2 lastMove;
     private Rigidbody2D rb;
+
+    private int lives;
+
+    
     private bool isStealth = false;
     // private Text coinsLabel, cupLabel, cardLabel;
 
     private void Start () {
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
+        respawnPoint = gameObject.transform;
         rb = GetComponent<Rigidbody2D> ();
+        lives = 3;
         // TODO change ot current HUD
         // coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
         // cupLabel = GameObject.Find ("CupLabel").GetComponent<Text> ();
@@ -148,5 +156,14 @@ public class Player : MonoBehaviour {
 
     public bool IsStealth () {
         return isStealth;
+    }
+
+    public void looseLife(){
+        lives--;
+        if(lives == 0){
+            //TODO
+            //gameOver;
+            Debug.Log("Game Over");
+        }
     }
 }

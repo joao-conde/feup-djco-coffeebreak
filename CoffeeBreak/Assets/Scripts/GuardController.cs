@@ -25,11 +25,14 @@ public class GuardController : AIController {
     }
 
     protected void FixedUpdate () {
-        RaycastHit2D hit = Physics2D.Raycast ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, ((Vector2) flashlight.transform.forward.normalized), 4.5f);
-        Debug.DrawLine ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, (Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized * 4.5f);
-        if (hit.collider != null) {
-            if (hit.collider.CompareTag ("Player")) {
-                target = hit.transform.position;
+        RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, ((Vector2) flashlight.transform.forward.normalized), 4.5f);
+        //Debug.DrawLine ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, (Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized * 4.5f);
+        Debug.DrawRay(gameObject.transform.position +flashlight.transform.forward.normalized ,((Vector2) flashlight.transform.forward.normalized*4.5f));
+        if (hit.Length > 1 ) {
+            if (hit[1].collider.CompareTag ("Player")) {
+                Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
+                StartCoroutine(handleSeen(player));
+                
             }
         }
     }
@@ -43,7 +46,8 @@ public class GuardController : AIController {
             } else if (col.tag == "Player") {
                 Player playerController = (Player) col.gameObject.GetComponent ("Player");
                 if (!playerController.IsStealth ()) {
-                    target = col.gameObject.transform.position;
+                    StartCoroutine(handleSeen(playerController));
+                    
                 }
             }
         }
@@ -62,5 +66,15 @@ public class GuardController : AIController {
                 targetCoin = null;
             }
         }
+    }
+
+    private IEnumerator handleSeen(Player player){
+        target = player.gameObject.transform.position;
+
+        yield return new WaitForSeconds(0.5f);
+        player.looseLife();
+        player.gameObject.transform.position = player.respawnPoint.position;
+        GotoNextPoint();
+        
     }
 }
