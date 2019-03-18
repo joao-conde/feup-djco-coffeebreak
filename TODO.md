@@ -1,24 +1,32 @@
 TODO LIST BY PRIORITY:
 
-1. [x] *Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele*
+1.  [x] *Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele*
 
-2. [x] *Guarda nao pode apanhar todas as moedas, so as atiradas* 
+2.  [x] *Guarda nao pode apanhar todas as moedas, so as atiradas* 
 
-3. [x] *Glowing e destaque de objetos que permitem interaçao*
+3.  [x] *Glowing e destaque de objetos que permitem interaçao*
 
-4. [ ] Respawn after getting caught
+7.  [ ] Alerta do guarda indicada por tipo um '!' em cima do guarda
 
-5. [ ] HUD/MainMenu/IngameMenu
+4.  [ ] Respawn after getting caught
 
-6. [ ] Map design
+5.  [ ] Game over
 
-7. [ ] Alerta do guarda indicada por tipo um '!' em cima do guarda
+6.  [ ] Win game
 
-8. [ ] Som ambiente e sfx  - passos do player e dos guardas
+7.  [ ] Map design
 
-9. [ ] Melhorar design dos elementos do jogo
+8.  [ ] HUD - moedas, cartao e copo, numero de desculpas/vidas
 
-10.[ ] Escolher a desculpa
+9.  [ ] Som ambiente e sfx  - passos do player e dos guardas
+
+10. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
+
+11. [ ] MainMenu - play, options, exit
+
+12. [ ] Melhorar design dos elementos do jogo
+
+13. [ ] Escolher a desculpa
 
 
 ...

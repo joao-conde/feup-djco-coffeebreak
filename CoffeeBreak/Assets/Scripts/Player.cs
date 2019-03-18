@@ -24,15 +24,16 @@ public class Player : MonoBehaviour {
     private Vector2 lastMove;
     private Rigidbody2D rb;
     private bool isStealth = false;
-    private Text coinsLabel, cupLabel, cardLabel;
+    // private Text coinsLabel, cupLabel, cardLabel;
 
     private void Start () {
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         rb = GetComponent<Rigidbody2D> ();
-        coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
-        cupLabel = GameObject.Find ("CupLabel").GetComponent<Text> ();
-        cardLabel = GameObject.Find ("CardLabel").GetComponent<Text> ();
+        // TODO change ot current HUD
+        // coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
+        // cupLabel = GameObject.Find ("CupLabel").GetComponent<Text> ();
+        // cardLabel = GameObject.Find ("CardLabel").GetComponent<Text> ();
     }
 
     private void Update () {
@@ -55,7 +56,7 @@ public class Player : MonoBehaviour {
             coinToss.tag = "ThrownCoin";
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
-            coinsLabel.text = "Coins: " + coins;
+            // coinsLabel.text = "Coins: " + coins;
         }
     }
 
@@ -113,19 +114,19 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
-            coinsLabel.text = "Coins: " + coins;
+            // coinsLabel.text = "Coins: " + coins; //TODO change to work with current HUD
         }
 
         if (other.gameObject.CompareTag ("Cup")) {
             Destroy (other.gameObject);
             hasCup = true;
-            cupLabel.text = "Cup picked up!";
+            // cupLabel.text = "Cup picked up!"; //TODO change to work with current HUD
         }
 
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
-            cardLabel.text = "Card picked up!";
+            // cardLabel.text = "Card picked up!"; //TODO change to work with current HUD
         }
 
         if (other.gameObject.CompareTag ("Doors")){
