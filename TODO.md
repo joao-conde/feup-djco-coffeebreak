@@ -12,7 +12,7 @@ TODO LIST BY PRIORITY:
 
 5.  [ ] Game over
 
-6.  [ ] Win game
+6.  [ ] Win game - máquinas de café!
 
 7.  [ ] Map design
 
