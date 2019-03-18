@@ -6,9 +6,9 @@ TODO LIST BY PRIORITY:
 
 3.  [x] *Glowing e destaque de objetos que permitem interaçao*
 
-7.  [ ] Alerta do guarda indicada por tipo um '!' em cima do guarda
+7.  [x] Alerta do guarda indicada por tipo um '!' em cima do guarda
 
-4.  [ ] Respawn after getting caught
+4.  [x] Respawn after getting caught
 
 5.  [ ] Game over
 
