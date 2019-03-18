@@ -10,7 +10,6 @@ public class GuardController : AIController {
     public Light flashlight;
     public float rotationSpeed;
     public float awerenessRadius;
-
     private GameObject targetCoin = null;
     private float stopThreshold = 0.20f;
 
@@ -47,7 +46,6 @@ public class GuardController : AIController {
                     target = col.gameObject.transform.position;
                 }
             }
-
         }
 
         if (targetCoin != null) {
