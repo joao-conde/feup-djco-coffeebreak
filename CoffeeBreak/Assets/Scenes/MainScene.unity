@@ -6779,14 +6779,9 @@ PrefabInstance:
       objectReference: {fileID: 1850505828}
     - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
         type: 3}
-      propertyPath: alert
+      propertyPath: runningSound
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
-      propertyPath: alertAnimation
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: c9f755519cdd9f94a80fa83705b136a0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb6e7705951109ccf8d42a3c9f26856c, type: 3}
 --- !u!1001 &2940031859073890314
@@ -7062,31 +7057,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403693563511307460, guid: 28fc410d33564505894b3746411fb2f3,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403693563511307460, guid: 28fc410d33564505894b3746411fb2f3,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.49045706
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403693563511307460, guid: 28fc410d33564505894b3746411fb2f3,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 8.810167
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403693563511307460, guid: 28fc410d33564505894b3746411fb2f3,
-        type: 3}
-      propertyPath: m_Offset.x
-      value: -2.207056
-      objectReference: {fileID: 0}
-    - target: {fileID: 5403693563511307460, guid: 28fc410d33564505894b3746411fb2f3,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 34.578674
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28fc410d33564505894b3746411fb2f3, type: 3}
