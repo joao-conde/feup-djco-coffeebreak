@@ -8,6 +8,8 @@ using static Player;
 public class GuardController : AIController {
 
     public Light flashlight;
+
+    public AudioClip runningSound;
     public float rotationSpeed;
     public float awerenessRadius;
     private GameObject targetCoin = null;
