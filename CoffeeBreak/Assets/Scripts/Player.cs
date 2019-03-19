@@ -28,7 +28,6 @@ public class Player : MonoBehaviour {
 
     private int lives;
 
-    
     private bool isStealth = false;
     // private Text coinsLabel, cupLabel, cardLabel;
 
@@ -102,7 +101,6 @@ public class Player : MonoBehaviour {
 
         if (Input.GetButtonDown ("Interact")) {
             if (interactiveObject != null) {
-
                 if (interactiveObject.CompareTag ("Doors") && hasCard) {
                     DoorController doorController = (DoorController) interactiveObject.GetComponent ("DoorController");
                     doorController.Interact ();
@@ -113,7 +111,11 @@ public class Player : MonoBehaviour {
                     binController.DropBin ();
                 }
 
-                //extendable to the coffee machine
+                if (interactiveObject.CompareTag ("CoffeeMachine")) {
+                    if ((hasCup && coins >= 25) || coins >= 30) {
+                        Debug.Log ("You got the coffee, you win!");
+                    }
+                }
             }
         }
     }
@@ -137,11 +139,11 @@ public class Player : MonoBehaviour {
             // cardLabel.text = "Card picked up!"; //TODO change to work with current HUD
         }
 
-        if (other.gameObject.CompareTag ("Doors")){
+        if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("CoffeeMachine")) {
             interactiveObject = other.gameObject;
-        } 
+        }
 
-        if(other.gameObject.CompareTag ("TrashBin")) {
+        if (other.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = other.gameObject;
             HighlightController lightController = (HighlightController) interactiveObject.GetComponentsInChildren<HighlightController> () [0];
             StartCoroutine (lightController.FlashNow ());
@@ -158,12 +160,12 @@ public class Player : MonoBehaviour {
         return isStealth;
     }
 
-    public void looseLife(){
+    public void looseLife () {
         lives--;
-        if(lives == 0){
+        if (lives == 0) {
             //TODO
             //gameOver;
-            Debug.Log("Game Over");
+            Debug.Log ("Game Over");
         }
     }
 }
