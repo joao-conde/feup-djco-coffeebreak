@@ -5,24 +5,24 @@ using UnityEngine;
 public class TrashBinController : MonoBehaviour {
 
     private bool isOnFloor;
+    Animator m_Animator;
 
     public void Start () {
-        // this.animator = GetComponent<Animator>();
-        // animator.enabled = false;
         this.isOnFloor = false;
+        m_Animator = gameObject.GetComponent<Animator> ();
     }
 
     public void DropBin () {
         if (!isOnFloor) {
             isOnFloor = true;
-            transform.Rotate (0, 0, -90);
+            m_Animator.SetBool ("isOnFloor", true);
         }
     }
 
     public void PickupBin () {
         if (isOnFloor) {
             isOnFloor = false;
-            transform.Rotate (0, 0, 90);
+            m_Animator.SetBool ("isOnFloor", false);
         }
     }
 

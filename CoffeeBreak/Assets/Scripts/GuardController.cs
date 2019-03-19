@@ -80,7 +80,7 @@ public class GuardController : AIController {
     }
 
     private IEnumerator HandleSeen(Player player){
-        StartCoroutine(DoBlinks(1.5f, 0.1f));
+        StartCoroutine(DoBlinks(1.5f, 0.2f));
         target = player.gameObject.transform.position;
         yield return new WaitForSeconds(0.5f);
         GotoNextPoint();
