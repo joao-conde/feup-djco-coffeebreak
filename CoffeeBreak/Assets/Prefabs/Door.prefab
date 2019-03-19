@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCollider: {fileID: 5116037153926968931}
+  isOpen: 1
 --- !u!95 &3431193211614620306
 Animator:
   serializedVersion: 3

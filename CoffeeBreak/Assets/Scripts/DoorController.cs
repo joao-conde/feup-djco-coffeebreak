@@ -7,15 +7,15 @@ public class DoorController : MonoBehaviour {
 
     public BoxCollider2D mainCollider;
 
-    private bool isOpen;
+    public  bool isOpen;
     private Animator animator;
     private NavMeshObstacle navMesh;
 
     public void Start () {
-        this.isOpen = false;
         this.animator = GetComponent<Animator> ();
-        animator.enabled = false;
         navMesh = GetComponent<NavMeshObstacle> ();
+        isOpen = !isOpen;
+        Interact();
     }
 
     public void Interact () {
