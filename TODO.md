@@ -16,7 +16,7 @@ TODO LIST BY PRIORITY:
 
 7.  [ ] Map design
 
-8.  [ ] HUD - moedas, cartao e copo, numero de desculpas/vidas
+8.  [x] HUD - moedas, cartao e copo, numero de desculpas/vidas
 
 9.  [ ] Som ambiente e sfx  - passos do player e dos guardas
 

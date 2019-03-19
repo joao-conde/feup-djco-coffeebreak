@@ -29,18 +29,17 @@ public class Player : MonoBehaviour {
     private int lives;
 
     private bool isStealth = false;
-    // private Text coinsLabel, cupLabel, cardLabel;
-
+    private Text coinsLabel;
+    private Image cardHUD, cupHUD;
     private void Start () {
+        lives = 3;
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         respawnPoint = gameObject.transform;
         rb = GetComponent<Rigidbody2D> ();
-        lives = 3;
-        // TODO change ot current HUD
-        // coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
-        // cupLabel = GameObject.Find ("CupLabel").GetComponent<Text> ();
-        // cardLabel = GameObject.Find ("CardLabel").GetComponent<Text> ();
+        coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
+        cardHUD = GameObject.Find("CardHUD").GetComponent<Image> ();
+        cupHUD = GameObject.Find("CupHUD").GetComponent<Image> ();
     }
 
     private void Update () {
@@ -63,7 +62,7 @@ public class Player : MonoBehaviour {
             coinToss.tag = "ThrownCoin";
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
-            // coinsLabel.text = "Coins: " + coins;
+            coinsLabel.text = "x " + coins;
         }
     }
 
@@ -124,19 +123,19 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
-            // coinsLabel.text = "Coins: " + coins; //TODO change to work with current HUD
+            coinsLabel.text = "x " + coins; //TODO change to work with current HUD
         }
 
         if (other.gameObject.CompareTag ("Cup")) {
             Destroy (other.gameObject);
             hasCup = true;
-            // cupLabel.text = "Cup picked up!"; //TODO change to work with current HUD
+            cupHUD.enabled = true;
         }
 
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
-            // cardLabel.text = "Card picked up!"; //TODO change to work with current HUD
+            cardHUD.enabled = true;
         }
 
         if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("CoffeeMachine")) {
@@ -161,10 +160,11 @@ public class Player : MonoBehaviour {
     }
 
     public void looseLife () {
+        if(lives <= 0) return;
+        GameObject.Find ("Excuse" + lives).GetComponent<Image> ().enabled = false;
         lives--;
         if (lives == 0) {
-            //TODO
-            //gameOver;
+            //TODO gameOver;
             Debug.Log ("Game Over");
         }
     }
