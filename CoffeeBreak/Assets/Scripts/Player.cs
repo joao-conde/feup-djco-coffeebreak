@@ -138,6 +138,10 @@ public class Player : MonoBehaviour {
             cardHUD.enabled = true;
         }
 
+        if(other.gameObject.CompareTag("Tip")){
+
+        }
+
         if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("CoffeeMachine")) {
             interactiveObject = other.gameObject;
         }
@@ -152,6 +156,10 @@ public class Player : MonoBehaviour {
     private void OnTriggerExit2D (Collider2D collision) {
         if (collision.gameObject.CompareTag ("Doors") || collision.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = null;
+        }
+
+        if(collision.gameObject.CompareTag("Tip")){
+            
         }
     }
 
