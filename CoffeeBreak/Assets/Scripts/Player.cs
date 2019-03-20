@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using static TrashBinController;
 using static DoorController;
 using static HighlightController;
-
+using static TipController;
 public class Player : MonoBehaviour {
 
     public float throwForce;
@@ -139,7 +139,8 @@ public class Player : MonoBehaviour {
         }
 
         if(other.gameObject.CompareTag("Tip")){
-
+            TipController tip = (TipController) other.gameObject.GetComponent("TipController");
+            tip.handleView();
         }
 
         if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("CoffeeMachine")) {
@@ -159,7 +160,8 @@ public class Player : MonoBehaviour {
         }
 
         if(collision.gameObject.CompareTag("Tip")){
-            
+            TipController tip = (TipController) collision.gameObject.GetComponent("TipController");
+            tip.handleView();
         }
     }
 
