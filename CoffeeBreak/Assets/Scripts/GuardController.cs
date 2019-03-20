@@ -45,9 +45,10 @@ public class GuardController : AIController {
         Vector3 direction = Vector3.Normalize (agent.velocity);
         flashlight.transform.forward = Vector3.RotateTowards (flashlight.transform.forward, direction, rotationSpeed * Time.deltaTime, 0.0f);
         HandleDistraction ();
+        FieldOfView();
     }
 
-    protected void FixedUpdate () {
+    protected void FieldOfView () {
         RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized), viewDistance);
         Debug.DrawRay (gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized * viewDistance));
         if (hit.Length > 1) {
