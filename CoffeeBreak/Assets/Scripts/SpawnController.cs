@@ -11,7 +11,7 @@ public class SpawnController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player")){
             Player player = (Player) other.gameObject.GetComponent ("Player");
-            player.respawnPoint = gameObject.transform;
+            player.respawnPoint = gameObject.transform.position;
         }
     }
 }
