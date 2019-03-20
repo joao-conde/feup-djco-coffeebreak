@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class TipController : MonoBehaviour
 {
-    void Start()
-    {
-        
+    public GameObject dialogBox;
+    private bool isNear;
+    
+    public void handleView(){
+        if(isNear){
+            isNear = false;
+            dialogBox.SetActive(false);
+        }else{
+            isNear = true;
+            dialogBox.SetActive(true);
+        }
     }
 
-    void Update()
-    {
-        
-    }
 }
