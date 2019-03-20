@@ -28,7 +28,7 @@ public class AIController : MonoBehaviour {
     }
 
     protected virtual void Update () {
-        if (!agent.pathPending && agent.remainingDistance < 0.5f) {
+        if (!agent.pathPending && agent.remainingDistance <= 1.2f) {
             GotoNextPoint ();
         }
 

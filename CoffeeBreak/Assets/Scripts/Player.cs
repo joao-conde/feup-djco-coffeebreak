@@ -13,9 +13,8 @@ public class Player : MonoBehaviour {
     public float throwForce;
     public Transform coinPrefab;
     public float moveSpeed;
-
-    public Transform respawnPoint;
-
+    public Vector3 respawnPoint;
+    
     private int coins;
     private Transform coinToss = null;
     private float stopThreshold = 0.5f;
@@ -31,11 +30,12 @@ public class Player : MonoBehaviour {
     private bool isStealth = false;
     private Text coinsLabel;
     private Image cardHUD, cupHUD;
+    
     private void Start () {
         lives = 3;
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
-        respawnPoint = gameObject.transform;
+        respawnPoint = gameObject.transform.position;
         rb = GetComponent<Rigidbody2D> ();
         coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
         cardHUD = GameObject.Find("CardHUD").GetComponent<Image> ();
