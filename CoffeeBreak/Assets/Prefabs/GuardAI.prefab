@@ -272,10 +272,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   flashlight: {fileID: 1911917300054056045}
-  viewDistance: 1
+  viewDistance: 2
   runningSound: {fileID: 8300000, guid: c9f755519cdd9f94a80fa83705b136a0, type: 3}
   rotationSpeed: 10
-  awerenessRadius: 2
+  awerenessRadius: 1
   alertIcon: {fileID: 499242171}
 --- !u!61 &1911917300827428472
 BoxCollider2D:
@@ -342,7 +342,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 7.9195223
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
