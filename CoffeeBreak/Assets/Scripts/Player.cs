@@ -14,6 +14,8 @@ public class Player : MonoBehaviour {
     public Transform coinPrefab;
     public float moveSpeed;
     public Vector3 respawnPoint;
+
+    private AudioSource coinPickSound;
     
     private int coins;
     private Transform coinToss = null;
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour {
     
     private void Start () {
         lives = 3;
+        coinPickSound = gameObject.GetComponent<AudioSource>();
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         respawnPoint = gameObject.transform.position;
@@ -123,6 +126,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
+            coinPickSound.Play();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
         }
 
