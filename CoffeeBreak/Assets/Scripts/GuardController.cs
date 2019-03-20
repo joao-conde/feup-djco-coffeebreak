@@ -9,6 +9,8 @@ public class GuardController : AIController {
 
     public Light flashlight;
 
+    public float viewDistance = 3f;
+
     public AudioClip runningSound;
     public float rotationSpeed;
     public float awerenessRadius;
@@ -17,28 +19,40 @@ public class GuardController : AIController {
 
     private GameObject targetCoin = null;
 
+    private AudioSource footsteps;
+
     private Renderer alertRenderer;
     private float stopThreshold = 0.20f;
 
     private bool spottedPlayer = false;
 
+    
+
     protected override void Start () {
         base.Start ();
+        footsteps = gameObject.GetComponent<AudioSource>();
         alertRenderer = alertIcon.GetComponent<Renderer>();
         alertRenderer.enabled = false;
     }
 
     protected override void Update () {
         base.Update ();
+        if(target != null ){
+            if(!footsteps.isPlaying){
+                footsteps.Play();
+            }
+        }else
+        {
+            footsteps.Stop();
+        }
         Vector3 direction = Vector3.Normalize (agent.velocity);
         flashlight.transform.forward = Vector3.RotateTowards (flashlight.transform.forward, direction, rotationSpeed * Time.deltaTime, 0.0f);
         HandleDistraction ();
     }
 
     protected void FixedUpdate () {
-        RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, ((Vector2) flashlight.transform.forward.normalized), 4.5f);
-        //Debug.DrawLine ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, (Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized * 4.5f);
-        Debug.DrawRay(gameObject.transform.position +flashlight.transform.forward.normalized ,((Vector2) flashlight.transform.forward.normalized*4.5f));
+        RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position + (Vector2) flashlight.transform.forward.normalized, ((Vector2) flashlight.transform.forward.normalized), viewDistance);
+        Debug.DrawRay(gameObject.transform.position +flashlight.transform.forward.normalized ,((Vector2) flashlight.transform.forward.normalized*viewDistance));
         if (hit.Length > 1 ) {
             if (hit[1].collider.CompareTag ("Player") && !spottedPlayer) {
                 spottedPlayer = true;
