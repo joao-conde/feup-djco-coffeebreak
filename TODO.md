@@ -16,17 +16,19 @@ TODO LIST BY PRIORITY:
 
 7.  [ ] Map design
 
-8.  [x] HUD - moedas, cartao e copo, numero de desculpas/vidas
+8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
 
-9.  [ ] Som ambiente e sfx  - passos do player e dos guardas
+9.  [x] HUD - moedas, cartao e copo, numero de desculpas/vidas
 
-10. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
+10. [ ] Som ambiente e sfx  - passos do player e dos guardas
 
-11. [ ] MainMenu - play, options, exit
+11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
 
-12. [ ] Melhorar design dos elementos do jogo
+12. [ ] MainMenu - play, options, exit
 
-13. [ ] Escolher a desculpa
+13. [ ] Melhorar design dos elementos do jogo
+
+14. [ ] Escolher a desculpa
 
 
 ...
