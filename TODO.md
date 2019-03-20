@@ -1,4 +1,32 @@
-TODO LIST BY PRIORITY:
+# TODO LIST BY PRIORITY
+
+
+## PREVIDEO RECORD
+
+5.  [ ] Game over
+
+6.  [ ] Win game
+
+7.  [ ] Map design
+
+8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
+
+10. [ ] Som ambiente e sfx  - passos do player e dos guardas
+
+13. [ ] Melhorar design dos elementos do jogo - guarda
+
+
+## POSTVIDEO RECORD
+
+11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
+
+12. [ ] MainMenu - play, options, exit
+
+14. [ ] Escolher a desculpa
+
+
+
+# DONE
 
 1.  [x] *Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele*
 
@@ -10,28 +38,4 @@ TODO LIST BY PRIORITY:
 
 4.  [x] Respawn after getting caught
 
-5.  [ ] Game over
-
-6.  [ ] Win game - máquinas de café!
-
-7.  [ ] Map design
-
-8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
-
 9.  [x] HUD - moedas, cartao e copo, numero de desculpas/vidas
-
-10. [ ] Som ambiente e sfx  - passos do player e dos guardas
-
-11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
-
-12. [ ] MainMenu - play, options, exit
-
-13. [ ] Melhorar design dos elementos do jogo
-
-14. [ ] Escolher a desculpa
-
-
-...
-
-
-9001. [ ] Pickpocket das moedas ao guarda
