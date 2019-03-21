@@ -7,7 +7,7 @@
 
 8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
 
-10. [ ] Som ambiente e sfx  - passos do player e dos guardas
+10. [ ] Som ambiente e sfx  - maquina de café e balde do lixo a tombar
 
 13. [ ] Melhorar design dos elementos do jogo - guarda
 
