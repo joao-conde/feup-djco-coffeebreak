@@ -141,6 +141,10 @@ MonoBehaviour:
     type: 3}
   moveSpeed: 10
   respawnPoint: {x: 0, y: 0, z: 0}
+  coinPickSound: {fileID: 8300000, guid: 4ca7abd92453069f696b570ed347031b, type: 3}
+  coinThrowSound: {fileID: 8300000, guid: 19cdf96619ad03121b4d97bad7dc0f4e, type: 3}
+  cupPickSound: {fileID: 8300000, guid: e3914237b944a9dcea508fbb2a2e819f, type: 3}
+  cardPickSound: {fileID: 8300000, guid: d85f403929f7a283089fc049adefbaf8, type: 3}
 --- !u!61 &5698651495259056548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +181,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4ca7abd92453069f696b570ed347031b, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

@@ -15,7 +15,14 @@ public class Player : MonoBehaviour {
     public float moveSpeed;
     public Vector3 respawnPoint;
 
-    private AudioSource coinPickSound;
+    private AudioSource actionSound;
+
+    public AudioClip coinPickSound;
+    public AudioClip coinThrowSound;
+
+    public AudioClip cupPickSound;
+
+    public AudioClip cardPickSound;
     
     private int coins;
     private Transform coinToss = null;
@@ -35,7 +42,7 @@ public class Player : MonoBehaviour {
     
     private void Start () {
         lives = 3;
-        coinPickSound = gameObject.GetComponent<AudioSource>();
+        actionSound = gameObject.GetComponent<AudioSource>();
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         respawnPoint = gameObject.transform.position;
@@ -63,6 +70,8 @@ public class Player : MonoBehaviour {
             coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
             coinToss.tag = "ThrownCoin";
+            actionSound.clip = coinThrowSound;
+            actionSound.Play();
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
             coinsLabel.text = "x " + coins;
@@ -126,19 +135,24 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
-            coinPickSound.Play();
+            actionSound.clip = coinPickSound;
+            actionSound.Play();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
         }
 
         if (other.gameObject.CompareTag ("Cup")) {
             Destroy (other.gameObject);
             hasCup = true;
+            actionSound.clip = cupPickSound;
+            actionSound.Play();
             cupHUD.enabled = true;
         }
 
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
+            actionSound.clip = cardPickSound;
+            actionSound.Play();
             cardHUD.enabled = true;
         }
 
