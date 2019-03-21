@@ -50,6 +50,7 @@ public class Player : MonoBehaviour {
         coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
         cardHUD = GameObject.Find ("CardImage").GetComponent<Image> ();
         cupHUD = GameObject.Find ("CupImage").GetComponent<Image> ();
+        coinsLabel.text = "x " + coins;
     }
 
     private void Update () {

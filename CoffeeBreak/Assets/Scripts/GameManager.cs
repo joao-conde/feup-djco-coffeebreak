@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
-    public int initialPlayerCoins = 0;
+    public int initialPlayerCoins;
 
     private void Awake () {
         if (instance == null)
