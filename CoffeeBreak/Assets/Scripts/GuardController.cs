@@ -24,9 +24,11 @@ public class GuardController : AIController {
     private float stopThreshold = 0.20f;
 
     private bool spottedPlayer = false;
+    private Animator animator;
 
     protected override void Start () {
         base.Start ();
+        animator = GetComponent<Animator> ();
         footsteps = gameObject.GetComponent<AudioSource> ();
         alertRenderer = alertIcon.GetComponent<Renderer> ();
         alertRenderer.enabled = false;
@@ -44,8 +46,9 @@ public class GuardController : AIController {
         }
         Vector3 direction = Vector3.Normalize (agent.velocity);
         flashlight.transform.forward = Vector3.RotateTowards (flashlight.transform.forward, direction, rotationSpeed * Time.deltaTime, 0.0f);
+        HandleMovement ();
         HandleDistraction ();
-        FieldOfView();
+        FieldOfView ();
     }
 
     protected void FieldOfView () {
@@ -57,6 +60,31 @@ public class GuardController : AIController {
                 Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
                 StartCoroutine (HandleSeen (player));
             }
+        }
+    }
+
+    private void HandleMovement () {
+
+        if (agent.velocity.y > 0 && agent.velocity.x > 0 && agent.velocity.y > agent.velocity.x) {
+            animator.SetBool ("guardRight", false);
+            animator.SetBool ("guardLeft", false);
+            return;
+        } else if (agent.velocity.y < 0 && agent.velocity.x < 0 && agent.velocity.y < agent.velocity.x) {
+            animator.SetBool ("guardRight", false);
+            animator.SetBool ("guardLeft", false);
+            return;
+        } else if (agent.velocity.y == 0 && agent.velocity.x == 0) {
+            animator.SetBool ("guardRight", false);
+            animator.SetBool ("guardLeft", false);
+            return;
+        }
+
+        if (agent.velocity.x < 0) {
+            animator.SetBool ("guardRight", false);
+            animator.SetBool ("guardLeft", true);
+        } else if (agent.velocity.x > 0) {
+            animator.SetBool ("guardLeft", false);
+            animator.SetBool ("guardRight", true);
         }
     }
 
