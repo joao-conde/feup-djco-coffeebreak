@@ -48,8 +48,8 @@ public class Player : MonoBehaviour {
         respawnPoint = gameObject.transform.position;
         rb = GetComponent<Rigidbody2D> ();
         coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
-        cardHUD = GameObject.Find ("CardHUD").GetComponent<Image> ();
-        cupHUD = GameObject.Find ("CupHUD").GetComponent<Image> ();
+        cardHUD = GameObject.Find ("CardImage").GetComponent<Image> ();
+        cupHUD = GameObject.Find ("CupImage").GetComponent<Image> ();
     }
 
     private void Update () {
