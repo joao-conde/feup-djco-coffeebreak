@@ -1,18 +1,8 @@
-# TODO LIST BY PRIORITY
-
-
-## PREVIDEO RECORD
-
-7.  [ ] Map design
-
-8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
+# TODO LIST RUSH HOUR EDITION
 
 10. [ ] Som ambiente e sfx  - maquina de café, maquina de café estragada, som alerta guarda, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
 
 13. [ ] Melhorar design dos elementos do jogo - guarda
-
-
-## POSTVIDEO RECORD
 
 11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para voltar ao main menu
 
@@ -40,3 +30,7 @@
 4.  [x] Respawn after getting caught
 
 9.  [x] HUD - moedas, cartao e copo, numero de desculpas/vidas
+
+7.  [x] Map design
+
+8.  [x] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
