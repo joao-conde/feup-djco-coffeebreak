@@ -11,6 +11,8 @@ public class DoorController : MonoBehaviour {
 
     public AudioClip openSound;
 
+    private bool isLoading;
+
     public AudioClip closeSound;
     private Animator animator;
     private NavMeshObstacle navMesh;
@@ -18,11 +20,13 @@ public class DoorController : MonoBehaviour {
     private AudioSource actionSound;
 
     public void Start () {
+        isLoading = true;
         this.animator = GetComponent<Animator> ();
         actionSound = GetComponent<AudioSource>();
         navMesh = GetComponent<NavMeshObstacle> ();
         isOpen = !isOpen;
         Interact();
+        isLoading = false;
     }
 
     public void Interact () {
@@ -32,15 +36,22 @@ public class DoorController : MonoBehaviour {
             isOpen = true;
             mainCollider.enabled = false;
             animator.SetBool ("isClosed", false);
-            actionSound.clip = openSound;
-            actionSound.Play();
+            if(!isLoading){
+                actionSound.clip = openSound;
+                actionSound.Play();
+                
+            }
             navMesh.enabled = false;
+            gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
         } else {
             isOpen = false;
             mainCollider.enabled = true;
-            actionSound.clip = closeSound;
-            actionSound.Play();
+            if(!isLoading){
+                actionSound.clip = closeSound;
+                actionSound.Play();
+            }
             animator.SetBool ("isClosed", true);
+            gameObject.layer = LayerMask.NameToLayer("Default");
             navMesh.enabled = true;
 
         }
