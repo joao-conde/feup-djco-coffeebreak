@@ -3,10 +3,6 @@
 
 ## PREVIDEO RECORD
 
-5.  [ ] Game over
-
-6.  [ ] Win game
-
 7.  [ ] Map design
 
 8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
@@ -18,12 +14,17 @@
 
 ## POSTVIDEO RECORD
 
-11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para sair do jogo e voltar ao main menu
+11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para voltar ao main menu
 
-12. [ ] MainMenu - play, options, exit
+12. [ ] MainMenu - options -> take sound into account, maybe resolution
+
+5.  [ ] Improve 'Game Over' transition
+
+6.  [ ] Improve 'Win Game' transition
+
+0.  [ ] Use LoadSceneAsync to load game scene while in menu, before 'Play' press
 
 14. [ ] Escolher a desculpa
-
 
 
 # DONE
