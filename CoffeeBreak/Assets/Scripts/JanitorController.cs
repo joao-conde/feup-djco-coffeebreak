@@ -9,14 +9,42 @@ public class JanitorController : AIController {
     public float awerenessRadius;
 
     private GameObject targetBin = null;
+    private Animator animator;
 
     protected override void Start () {
         base.Start ();
+        animator = GetComponent<Animator> ();
     }
 
     protected override void Update () {
         base.Update ();
+        HandleMovement ();
         HandleTrashBins ();
+    }
+
+    private void HandleMovement () {
+
+        if (agent.velocity.y > 0 && agent.velocity.x > 0 && agent.velocity.y > agent.velocity.x) {
+            animator.SetBool ("janitorRight", false);
+            animator.SetBool ("janitorLeft", false);
+            return;
+        } else if (agent.velocity.y < 0 && agent.velocity.x < 0 && agent.velocity.y < agent.velocity.x) {
+            animator.SetBool ("janitorRight", false);
+            animator.SetBool ("janitorLeft", false);
+            return;
+        } else if (agent.velocity.y == 0 && agent.velocity.x == 0) {
+            animator.SetBool ("janitorRight", false);
+            animator.SetBool ("janitorLeft", false);
+            return;
+        }
+
+        if (agent.velocity.x < 0) {
+            animator.SetBool ("janitorRight", false);
+            animator.SetBool ("janitorLeft", true);
+        } else if (agent.velocity.x > 0) {
+            animator.SetBool ("janitorLeft", false);
+            animator.SetBool ("janitorRight", true);
+        }
     }
 
     private void HandleTrashBins () {
