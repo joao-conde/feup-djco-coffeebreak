@@ -145,7 +145,7 @@ public class Player : MonoBehaviour {
             hasCup = true;
             actionSound.clip = cupPickSound;
             actionSound.Play ();
-            cupHUD.material = null;
+            cupHUD.enabled = true;
         }
 
         if (other.gameObject.CompareTag ("Card")) {
@@ -153,7 +153,7 @@ public class Player : MonoBehaviour {
             hasCard = true;
             actionSound.clip = cardPickSound;
             actionSound.Play ();
-            cardHUD.material = null;
+            cardHUD.enabled = true;
         }
 
         if (other.gameObject.CompareTag ("Tip")) {

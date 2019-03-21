@@ -34,7 +34,6 @@ public class DoorController : MonoBehaviour {
 
         if (!isOpen) {
             isOpen = true;
-            mainCollider.enabled = false;
             animator.SetBool ("isClosed", false);
             if(!isLoading){
                 actionSound.clip = openSound;
@@ -43,9 +42,9 @@ public class DoorController : MonoBehaviour {
             }
             navMesh.enabled = false;
             gameObject.layer = LayerMask.NameToLayer("Ignore Raycast");
+            mainCollider.enabled = false;
         } else {
             isOpen = false;
-            mainCollider.enabled = true;
             if(!isLoading){
                 actionSound.clip = closeSound;
                 actionSound.Play();
@@ -53,7 +52,7 @@ public class DoorController : MonoBehaviour {
             animator.SetBool ("isClosed", true);
             gameObject.layer = LayerMask.NameToLayer("Default");
             navMesh.enabled = true;
-
+            mainCollider.enabled = true;
         }
     }
 }
