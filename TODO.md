@@ -18,9 +18,9 @@
 
 12. [ ] MainMenu - options -> take sound into account, maybe resolution
 
-5.  [ ] Improve 'Game Over' transition
+5.  [x] Improve 'Game Over' transition
 
-6.  [ ] Improve 'Win Game' transition
+6.  [x] Improve 'Win Game' transition
 
 0.  [x] Use LoadSceneAsync to load game scene while in menu, before 'Play' press
 
