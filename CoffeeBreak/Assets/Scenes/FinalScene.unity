@@ -4123,7 +4123,55 @@ PrefabInstance:
     - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
         type: 3}
       propertyPath: m_Text
-      value: "Throw coins with \n'Mouse1' to distract\nguards\x13"
+      value: 'Stealth mode isn''t enough?
+
+        Click on the left button of the mouse
+
+        so that you can throw coins.
+
+        The guards will get distracted
+
+        by the noise.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9877281
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000000067055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61.68962
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00000032783
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.970314
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c6388513e2277c1938075a43dc3bc4, type: 3}
@@ -4674,7 +4722,53 @@ PrefabInstance:
     - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
         type: 3}
       propertyPath: m_Text
-      value: "Press 'E' to interact \n\x13with objects"
+      value: 'Objects might be in your way,
+
+        but what if they''re not?
+
+        Take advantage of your surroundings,
+
+        press ''E'' to interact with them.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000000089407
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.00000020117
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61.649822
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.970985
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c6388513e2277c1938075a43dc3bc4, type: 3}
@@ -43086,14 +43180,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 211307417, guid: ecea25998c130a9449d8313397fe9f37, type: 3}
-      propertyPath: m_Volume
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 4234828987758751647, guid: ecea25998c130a9449d8313397fe9f37,
         type: 3}
       propertyPath: moveSpeed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 211307417, guid: ecea25998c130a9449d8313397fe9f37, type: 3}
+      propertyPath: m_Volume
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecea25998c130a9449d8313397fe9f37, type: 3}
@@ -43722,6 +43816,92 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1711654396977162397, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 313de55866d4943faa5e3703f393962f,
+        type: 3}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Watch out!
+
+        Don''t get caught by the guard.
+
+        Your steps can easily echo
+
+        through the corridors of FEUP,
+
+        try to hold ''Shift'' while you run
+
+        to enter stealth mode.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3352887556653650415, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 61.6511
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 37.970047
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7211115850681011693, guid: 47c6388513e2277c1938075a43dc3bc4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47c6388513e2277c1938075a43dc3bc4, type: 3}
@@ -48142,6 +48322,11 @@ PrefabInstance:
     - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
         type: 3}
       propertyPath: awerenessRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1911917300827428474, guid: bb6e7705951109ccf8d42a3c9f26856c,
+        type: 3}
+      propertyPath: m_Speed
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
