@@ -7,7 +7,7 @@
 
 8.  [ ] Tips/ensinar o jogador a jogar, sem ser explicitamente por um how-to-play
 
-10. [ ] Som ambiente e sfx  - maquina de café, maquina de café estragada, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
+10. [ ] Som ambiente e sfx  - maquina de café, maquina de café estragada, som alerta guarda, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
 
 13. [ ] Melhorar design dos elementos do jogo - guarda
 
