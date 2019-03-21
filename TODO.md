@@ -22,7 +22,7 @@
 
 6.  [ ] Improve 'Win Game' transition
 
-0.  [ ] Use LoadSceneAsync to load game scene while in menu, before 'Play' press
+0.  [x] Use LoadSceneAsync to load game scene while in menu, before 'Play' press
 
 14. [ ] Escolher a desculpa
 

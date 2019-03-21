@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     public int initialPlayerCoins = 0;
 
-    private bool loadedGame = false;
-
     private void Awake () {
         if (instance == null)
             instance = this;
@@ -19,20 +17,15 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad (gameObject);
     }
 
-    public void Update () {
-        if (!loadedGame){
-            loadedGame = true;
-            StartCoroutine (LoadGameAsync ());
-        }
+    public void Start(){
+        StartCoroutine (LoadGameAsync ());
     }
 
     public void EndGame () {
-        //Invoke ("Restart", 2f);
         LoadScene (2);
     }
 
     public void WinGame () {
-        //Invoke ("Restart", 2f);
         LoadScene (3);
     }
 
@@ -44,10 +37,8 @@ public class GameManager : MonoBehaviour {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (1);
         asyncLoad.allowSceneActivation = false;
         while (!asyncLoad.isDone) {
-            // Debug.Log(asyncLoad.progress * 100 + "%");
             yield return null;
         }
-        // Debug.Log ("Finished loading game");
     }
 
 }
