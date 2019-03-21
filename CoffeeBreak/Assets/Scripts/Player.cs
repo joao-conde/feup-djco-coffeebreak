@@ -23,7 +23,7 @@ public class Player : MonoBehaviour {
     public AudioClip cupPickSound;
 
     public AudioClip cardPickSound;
-    
+
     private int coins;
     private Transform coinToss = null;
     private float stopThreshold = 0.5f;
@@ -39,17 +39,17 @@ public class Player : MonoBehaviour {
     private bool isStealth = false;
     private Text coinsLabel;
     private Image cardHUD, cupHUD;
-    
+
     private void Start () {
         lives = 3;
-        actionSound = gameObject.GetComponent<AudioSource>();
+        actionSound = gameObject.GetComponent<AudioSource> ();
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         respawnPoint = gameObject.transform.position;
         rb = GetComponent<Rigidbody2D> ();
         coinsLabel = GameObject.Find ("CoinsLabel").GetComponent<Text> ();
-        cardHUD = GameObject.Find("CardHUD").GetComponent<Image> ();
-        cupHUD = GameObject.Find("CupHUD").GetComponent<Image> ();
+        cardHUD = GameObject.Find ("CardHUD").GetComponent<Image> ();
+        cupHUD = GameObject.Find ("CupHUD").GetComponent<Image> ();
     }
 
     private void Update () {
@@ -71,7 +71,7 @@ public class Player : MonoBehaviour {
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
             coinToss.tag = "ThrownCoin";
             actionSound.clip = coinThrowSound;
-            actionSound.Play();
+            actionSound.Play ();
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
             coins--;
             coinsLabel.text = "x " + coins;
@@ -136,7 +136,7 @@ public class Player : MonoBehaviour {
             Destroy (other.gameObject);
             coins++;
             actionSound.clip = coinPickSound;
-            actionSound.Play();
+            actionSound.Play ();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
         }
 
@@ -144,7 +144,7 @@ public class Player : MonoBehaviour {
             Destroy (other.gameObject);
             hasCup = true;
             actionSound.clip = cupPickSound;
-            actionSound.Play();
+            actionSound.Play ();
             cupHUD.enabled = true;
         }
 
@@ -152,13 +152,13 @@ public class Player : MonoBehaviour {
             Destroy (other.gameObject);
             hasCard = true;
             actionSound.clip = cardPickSound;
-            actionSound.Play();
+            actionSound.Play ();
             cardHUD.enabled = true;
         }
 
-        if(other.gameObject.CompareTag("Tip")){
-            TipController tip = (TipController) other.gameObject.GetComponent("TipController");
-            tip.handleView();
+        if (other.gameObject.CompareTag ("Tip")) {
+            TipController tip = (TipController) other.gameObject.GetComponent ("TipController");
+            tip.handleView ();
         }
 
         if (other.gameObject.CompareTag ("Doors") || other.gameObject.CompareTag ("CoffeeMachine")) {
@@ -177,9 +177,9 @@ public class Player : MonoBehaviour {
             interactiveObject = null;
         }
 
-        if(collision.gameObject.CompareTag("Tip")){
-            TipController tip = (TipController) collision.gameObject.GetComponent("TipController");
-            tip.handleView();
+        if (collision.gameObject.CompareTag ("Tip")) {
+            TipController tip = (TipController) collision.gameObject.GetComponent ("TipController");
+            tip.handleView ();
         }
     }
 
@@ -188,12 +188,11 @@ public class Player : MonoBehaviour {
     }
 
     public void looseLife () {
-        if(lives <= 0) return;
+        if (lives <= 0) return;
         GameObject.Find ("Excuse" + lives).GetComponent<Image> ().enabled = false;
         lives--;
         if (lives == 0) {
-            //TODO gameOver;
-            Debug.Log ("Game Over");
+            FindObjectOfType<GameManager> ().EndGame ();
         }
     }
 }

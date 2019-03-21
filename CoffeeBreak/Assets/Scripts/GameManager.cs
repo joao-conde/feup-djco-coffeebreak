@@ -1,17 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour {
-
-    public float levelStartDelay = 2f;
     public static GameManager instance = null;
     public int initialPlayerCoins = 0;
 
-    private bool doingSetup;
-
-    
+    bool gameOver = false;
 
     private void Awake () {
         if (instance == null)
@@ -20,6 +17,18 @@ public class GameManager : MonoBehaviour {
             Destroy (gameObject);
 
         DontDestroyOnLoad (gameObject);
+    }
+
+    public void EndGame () {
+        if (!gameOver) {
+            gameOver = true;
+            //Invoke ("Restart", 2f);
+            LoadScene (2);
+        }
+    }
+
+    private void LoadScene (int sceneIndex) {
+        SceneManager.LoadScene (sceneIndex);
     }
 
 }
