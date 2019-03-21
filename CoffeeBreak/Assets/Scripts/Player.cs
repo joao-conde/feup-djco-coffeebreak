@@ -11,6 +11,8 @@ using static TipController;
 public class Player : MonoBehaviour {
 
     public float throwForce;
+
+    public float stealthSlowPerc;
     public Transform coinPrefab;
     public float moveSpeed;
     public Vector3 respawnPoint;
@@ -92,7 +94,7 @@ public class Player : MonoBehaviour {
             }
 
             if (Input.GetButton ("SlowMovement")) {
-                transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed / 2f * Time.deltaTime);
+                transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed * stealthSlowPerc * Time.deltaTime);
                 isStealth = true;
             } else {
                 transform.Translate (new Vector3 (Input.GetAxisRaw ("Horizontal"), 0f, 0f) * moveSpeed * Time.deltaTime);
