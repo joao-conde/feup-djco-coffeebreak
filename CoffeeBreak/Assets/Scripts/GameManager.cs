@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     public int initialPlayerCoins = 0;
 
-    bool gameOver = false;
-
     private void Awake () {
         if (instance == null)
             instance = this;
@@ -20,11 +18,13 @@ public class GameManager : MonoBehaviour {
     }
 
     public void EndGame () {
-        if (!gameOver) {
-            gameOver = true;
-            //Invoke ("Restart", 2f);
-            LoadScene (2);
-        }
+        //Invoke ("Restart", 2f);
+        LoadScene (2);
+    }
+
+    public void WinGame () {
+        //Invoke ("Restart", 2f);
+        LoadScene (3);
     }
 
     private void LoadScene (int sceneIndex) {

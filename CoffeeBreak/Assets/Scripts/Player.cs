@@ -124,7 +124,7 @@ public class Player : MonoBehaviour {
 
                 if (interactiveObject.CompareTag ("CoffeeMachine")) {
                     if ((hasCup && coins >= 25) || coins >= 30) {
-                        Debug.Log ("You got the coffee, you win!");
+                        FindObjectOfType<GameManager>().WinGame();
                     }
                 }
             }
