@@ -272,11 +272,13 @@ MonoBehaviour:
   points:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   flashlight: {fileID: 1911917300054056045}
-  viewDistance: 2
+  viewDistance: 3
   rotationSpeed: 10
   awerenessRadius: 2
-  coinPickUpRadius: 2
+  coinPickUpRadius: 4
   alertIcon: {fileID: 499242171}
 --- !u!61 &1911917300827428472
 BoxCollider2D:

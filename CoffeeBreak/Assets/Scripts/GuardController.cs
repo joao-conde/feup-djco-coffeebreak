@@ -140,6 +140,15 @@ public class GuardController : AIController {
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "Player" && !spottedPlayer){
+                spottedPlayer = true;
+                Player player = (Player) other.collider.gameObject.GetComponent ("Player");
+                alert.Play();
+                StartCoroutine (HandleSeen (player));
+        }
+    }
+
     private IEnumerator HandleSeen (Player player) {
         StartCoroutine (DoBlinks (1.5f, 0.2f));
         target = player.gameObject.transform.position;
