@@ -138,6 +138,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
+            actionSound.volume = 0.05f;
             actionSound.clip = coinPickSound;
             actionSound.Play ();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
@@ -146,6 +147,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Cup")) {
             Destroy (other.gameObject);
             hasCup = true;
+            actionSound.volume = 0.5f;
             actionSound.clip = cupPickSound;
             actionSound.Play ();
             cupHUD.enabled = true;
@@ -154,6 +156,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
+            actionSound.volume = 0.5f;
             actionSound.clip = cardPickSound;
             actionSound.Play ();
             cardHUD.enabled = true;

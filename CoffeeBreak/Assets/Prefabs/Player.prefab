@@ -137,10 +137,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   throwForce: 30
+  stealthSlowPerc: 0.7
   coinPrefab: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
     type: 3}
-  moveSpeed: 5
-  respawnPoint: {x: 0, y: 0, z: 0}
+  moveSpeed: 4
+  respawnPoint: {x: -17, y: 44, z: 0}
   coinPickSound: {fileID: 8300000, guid: 4ca7abd92453069f696b570ed347031b, type: 3}
   coinThrowSound: {fileID: 8300000, guid: 19cdf96619ad03121b4d97bad7dc0f4e, type: 3}
   cupPickSound: {fileID: 8300000, guid: e3914237b944a9dcea508fbb2a2e819f, type: 3}
@@ -183,7 +184,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.1
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
