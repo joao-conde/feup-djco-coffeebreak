@@ -74,6 +74,7 @@ public class Player : MonoBehaviour {
         } else if (Input.GetButtonDown ("Fire1") && coins > 0) {
             Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
             Vector3 direction = ray.origin - transform.position;
+            direction.z = 0;
             coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
             coinToss.tag = "ThrownCoin";

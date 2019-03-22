@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 849cb09c014c5a24183195a85b4eca4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 30
+  throwForce: 9
   stealthSlowPerc: 0.7
   coinPrefab: {fileID: 558500582399985293, guid: 40ac4878d56e1456f891e77105ab8eac,
     type: 3}
