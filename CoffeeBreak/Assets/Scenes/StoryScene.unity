@@ -147,8 +147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: -1}
-  m_SizeDelta: {x: 1571.2, y: 883.8}
+  m_AnchoredPosition: {x: 37, y: -61}
+  m_SizeDelta: {x: 1663.3, y: 935.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &96354209
 MonoBehaviour:
@@ -182,13 +182,15 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\x13In a night at FEUP coffee is needed DJCO e pra amanha lmao nice fiesta
-    boyz\n\x13In a night at FEUP coffee is needed DJCO e pra amanha lmao nice fiesta
-    boyz\n\x13In a night at FEUP coffee is needed DJCO e pra amanha lmao nice fiesta
-    boyz\n\x13In a night at FEUP coffee is needed DJCO e pra amanha lmao nice fiesta
-    boyz\n\x13In a night at FEUP coffee is needed DJCO e pra amanha lmao nice fiesta
-    boyz\x13\x13"
+    m_LineSpacing: 0.75
+  m_Text: " \x1ASo... pulling an all-nighter again, uh? As you know this can only
+    be done by drinking (un)healthy amounts of coffee. \n\n\x13 After paying for a
+    nice cup of coffee you realize the vending machine did it again: it took your
+    money and spit out nothing but sugar and coffee. No cup. You are now infuriated.\n\n
+    In your quest for coffee you will encounter FEUP's night guards. Why are they
+    after you? Well, because [INSERT PLOT HOLE HERE].\n\n Make the most out of the
+    environment and your stealth skills in order to get the precious nectar of the
+    gods.\x13"
 --- !u!222 &96354210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -244,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: -437}
+  m_AnchoredPosition: {x: -12, y: -437}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &314821960
@@ -389,6 +391,75 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &697577829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5317021981995582824, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_Name
+      value: SceneChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317021981995582826, guid: f2c4d303b4744499382fe6ed9f81ed48,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2c4d303b4744499382fe6ed9f81ed48, type: 3}
 --- !u!1 &1677401606
 GameObject:
   m_ObjectHideFlags: 0

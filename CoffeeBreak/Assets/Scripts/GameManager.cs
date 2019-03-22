@@ -30,11 +30,6 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad (gameObject);
     }
 
-    public void Start(){
-        StartCoroutine (LoadGameAsync ());
-    }
-
-
     public void EndGame () {
         LoadScene (2);
     }
@@ -46,13 +41,4 @@ public class GameManager : MonoBehaviour {
     private void LoadScene (int sceneIndex) {
         SceneManager.LoadScene (sceneIndex);
     }
-
-    IEnumerator LoadGameAsync () {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync (1);
-        asyncLoad.allowSceneActivation = false;
-        while (!asyncLoad.isDone) {
-            yield return null;
-        }
-    }
-
 }
