@@ -31,11 +31,11 @@ public class GameManager : MonoBehaviour {
     }
 
     public void EndGame () {
-        LoadScene (2);
+        LoadScene (3);
     }
 
     public void WinGame () {
-        LoadScene (3);
+        LoadScene (4);
     }
 
     private void LoadScene (int sceneIndex) {

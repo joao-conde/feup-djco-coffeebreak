@@ -45,7 +45,7 @@ public class Player : MonoBehaviour {
     private Image cardHUD, cupHUD;
 
     private void Start () {
-        lives = 3;
+        lives = 5;
         actionSound = gameObject.GetComponent<AudioSource> ();
         initialVolume = actionSound.volume;
         actionSound.volume = initialVolume * GameManager.instance.sfxMultiplier;
