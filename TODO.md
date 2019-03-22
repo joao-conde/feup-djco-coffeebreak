@@ -2,13 +2,9 @@
 
 10. [ ] Som ambiente e sfx  - maquina de café, maquina de café estragada, som alerta guarda, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
 
-13. [ ] Melhorar design dos elementos do jogo - guarda
-
 11. [ ] IngameMenu - menu de jogo com opçoes (som, fullscreen) mais opçoes para voltar ao main menu
 
 12. [ ] MainMenu - options -> take sound into account, maybe resolution
-
-14. [ ] Escolher a desculpa
 
 
 # DONE
