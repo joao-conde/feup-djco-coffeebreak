@@ -19,10 +19,14 @@ public class DoorController : MonoBehaviour {
 
     private AudioSource actionSound;
 
+    private float initialVolume;
+
     public void Start () {
         isLoading = true;
         this.animator = GetComponent<Animator> ();
         actionSound = GetComponent<AudioSource>();
+        initialVolume = actionSound.volume;
+        actionSound.volume = initialVolume * GameManager.instance.sfxMultiplier;
         navMesh = GetComponent<NavMeshObstacle> ();
         isOpen = !isOpen;
         Interact();

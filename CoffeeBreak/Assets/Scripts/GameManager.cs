@@ -8,6 +8,19 @@ public class GameManager : MonoBehaviour {
     public static GameManager instance = null;
     public int initialPlayerCoins;
 
+    public float musicMultiplier = 1;
+
+
+    public float sfxMultiplier = 1;
+
+    public void setMusicMultiplier(float mult){
+        musicMultiplier = mult;
+    }
+
+    public void setSFXMultiplier(float mult){
+        sfxMultiplier = mult;
+    }
+
     private void Awake () {
         if (instance == null)
             instance = this;
@@ -20,6 +33,7 @@ public class GameManager : MonoBehaviour {
     public void Start(){
         StartCoroutine (LoadGameAsync ());
     }
+
 
     public void EndGame () {
         LoadScene (2);

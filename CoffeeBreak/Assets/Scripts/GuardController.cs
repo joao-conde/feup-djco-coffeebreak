@@ -25,14 +25,23 @@ public class GuardController : AIController {
     private Renderer alertRenderer;
     private float stopThreshold = 0.20f;
 
+    private float footstepsInitialVolume;
+
+    private float alertInitialVolume;
+
     private bool spottedPlayer = false;
     private Animator animator;
 
     protected override void Start () {
         base.Start ();
         animator = GetComponent<Animator> ();
+
         footsteps = gameObject.GetComponents<AudioSource> ()[0];
+        footstepsInitialVolume = footsteps.volume;
+        footsteps.volume = footstepsInitialVolume * GameManager.instance.sfxMultiplier;
         alert = gameObject.GetComponents<AudioSource>()[1];
+        alertInitialVolume = alert.volume;
+        alert.volume = alertInitialVolume * GameManager.instance.sfxMultiplier;
         alertRenderer = alertIcon.GetComponent<Renderer> ();
         alertRenderer.enabled = false;
     }

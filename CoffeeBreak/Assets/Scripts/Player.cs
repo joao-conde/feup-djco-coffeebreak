@@ -19,6 +19,8 @@ public class Player : MonoBehaviour {
 
     private AudioSource actionSound;
 
+    private float initialVolume;
+
     public AudioClip coinPickSound;
     public AudioClip coinThrowSound;
 
@@ -45,6 +47,8 @@ public class Player : MonoBehaviour {
     private void Start () {
         lives = 3;
         actionSound = gameObject.GetComponent<AudioSource> ();
+        initialVolume = actionSound.volume;
+        actionSound.volume = initialVolume * GameManager.instance.sfxMultiplier;
         coins = GameManager.instance.initialPlayerCoins;
         playerAnimator = GetComponent<Animator> ();
         respawnPoint = gameObject.transform.position;
@@ -138,7 +142,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
-            actionSound.volume = 0.05f;
+            actionSound.volume = 0.05f * GameManager.instance.sfxMultiplier;
             actionSound.clip = coinPickSound;
             actionSound.Play ();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
@@ -156,7 +160,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Card")) {
             Destroy (other.gameObject);
             hasCard = true;
-            actionSound.volume = 0.5f;
+            actionSound.volume = 0.5f * GameManager.instance.sfxMultiplier;
             actionSound.clip = cardPickSound;
             actionSound.Play ();
             cardHUD.enabled = true;
