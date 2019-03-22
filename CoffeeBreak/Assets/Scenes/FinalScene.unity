@@ -49092,11 +49092,6 @@ PrefabInstance:
       propertyPath: points.Array.data[1]
       value: 
       objectReference: {fileID: 1754952037}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
-      propertyPath: awerenessRadius
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1911917300827428474, guid: bb6e7705951109ccf8d42a3c9f26856c,
         type: 3}
       propertyPath: m_Speed

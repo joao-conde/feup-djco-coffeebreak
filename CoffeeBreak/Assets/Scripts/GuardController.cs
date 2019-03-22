@@ -10,7 +10,7 @@ public class GuardController : AIController {
 
     public float viewDistance = 3f;
 
-    public AudioClip runningSound;
+    
     public float rotationSpeed;
     public float awerenessRadius;
 
@@ -19,6 +19,8 @@ public class GuardController : AIController {
     private GameObject targetCoin = null;
 
     private AudioSource footsteps;
+
+    private AudioSource alert;
 
     private Renderer alertRenderer;
     private float stopThreshold = 0.20f;
@@ -29,7 +31,8 @@ public class GuardController : AIController {
     protected override void Start () {
         base.Start ();
         animator = GetComponent<Animator> ();
-        footsteps = gameObject.GetComponent<AudioSource> ();
+        footsteps = gameObject.GetComponents<AudioSource> ()[0];
+        alert = gameObject.GetComponents<AudioSource>()[1];
         alertRenderer = alertIcon.GetComponent<Renderer> ();
         alertRenderer.enabled = false;
     }
@@ -58,6 +61,7 @@ public class GuardController : AIController {
             if (hit[1].collider.CompareTag ("Player") && !spottedPlayer) {
                 spottedPlayer = true;
                 Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
+                alert.Play();
                 StartCoroutine (HandleSeen (player));
             }
         }
@@ -98,6 +102,7 @@ public class GuardController : AIController {
                 Player playerController = (Player) col.gameObject.GetComponent ("Player");
                 if (!playerController.IsStealth () && !spottedPlayer) {
                     spottedPlayer = true;
+                    alert.Play();
                     StartCoroutine (HandleSeen (playerController));
                 }
             }
