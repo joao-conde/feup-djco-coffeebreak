@@ -276,6 +276,7 @@ MonoBehaviour:
   viewDistance: 2
   rotationSpeed: 10
   awerenessRadius: 2
+  coinPickUpRadius: 2
   alertIcon: {fileID: 499242171}
 --- !u!61 &1911917300827428472
 BoxCollider2D:
