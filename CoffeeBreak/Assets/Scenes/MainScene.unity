@@ -10305,11 +10305,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
         type: 3}
-      propertyPath: points.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
       propertyPath: points.Array.data[0]
       value: 
       objectReference: {fileID: 259910966}
@@ -10328,21 +10323,6 @@ PrefabInstance:
       propertyPath: points.Array.data[3]
       value: 
       objectReference: {fileID: 1716533592}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
-      propertyPath: viewDistance
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
-      propertyPath: awerenessRadius
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911917300827428475, guid: bb6e7705951109ccf8d42a3c9f26856c,
-        type: 3}
-      propertyPath: coinPickUpRadius
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1911917300827428474, guid: bb6e7705951109ccf8d42a3c9f26856c,
         type: 3}
       propertyPath: m_Enabled
