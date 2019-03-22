@@ -8,9 +8,6 @@
 
 0.  [ ] Map design
 
-0.  [ ] If player hits guard he gets caught
-
-
 # DONE
 
 1.  [x] Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele
@@ -34,3 +31,5 @@
 0.  [x] Use LoadSceneAsync to load game scene while in menu, before 'Play' press
 
 10. [x] Som ambiente e sfx  - maquina de café, maquina de café estragada, som alerta guarda, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
+
+0.  [x] If player hits guard he gets caught
