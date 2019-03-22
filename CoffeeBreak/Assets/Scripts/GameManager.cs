@@ -30,6 +30,17 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad (gameObject);
     }
 
+
+    public bool TogglePause(){
+        if(Time.timeScale == 0f){
+            Time.timeScale = 1f;
+            return false;
+        }else{
+            Time.timeScale  = 0f;
+            return true;
+        }
+    }
+
     public void EndGame () {
         LoadScene (2);
     }

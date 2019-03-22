@@ -60,6 +60,8 @@ public class Player : MonoBehaviour {
     }
 
     private void Update () {
+
+        HandlePauseMenu();
         HandlePlayerMovement ();
         HandleCoinToss ();
     }
@@ -180,6 +182,12 @@ public class Player : MonoBehaviour {
             interactiveObject = other.gameObject;
             HighlightController lightController = (HighlightController) interactiveObject.GetComponentsInChildren<HighlightController> () [0];
             StartCoroutine (lightController.FlashNow ());
+        }
+    }
+
+    private void HandlePauseMenu(){
+        if(Input.GetButtonDown("Cancel")){
+            GameManager.instance.TogglePause();
         }
     }
 
