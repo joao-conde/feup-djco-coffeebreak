@@ -48,7 +48,7 @@ public class JanitorController : AIController {
     }
 
     private void HandleTrashBins () {
-        Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
+        //Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll (transform.position, awerenessRadius);
         foreach (Collider2D col in hitColliders) {
             if (col.tag == "TrashBin") {

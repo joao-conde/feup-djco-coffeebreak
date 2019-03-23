@@ -67,7 +67,7 @@ public class GuardController : AIController {
 
     protected void FieldOfView () {
         RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized), viewDistance);
-        Debug.DrawRay (gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized * viewDistance));
+        //Debug.DrawRay (gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized * viewDistance));
         if (hit.Length > 1) {
             if (hit[1].collider.CompareTag ("Player") && !spottedPlayer) {
                 Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
@@ -107,7 +107,7 @@ public class GuardController : AIController {
     }
 
     private void HandleDistraction () {
-        Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
+        //Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
         Collider2D[] playerRadius = Physics2D.OverlapCircleAll (transform.position, awerenessRadius);
         foreach (Collider2D col in playerRadius) {
             if (col.tag == "Player") {
@@ -123,7 +123,8 @@ public class GuardController : AIController {
             }
         }
 
-        Debug.DrawLine (transform.position, transform.position + new Vector3 (coinPickUpRadius, coinPickUpRadius, 0)); //comment for test
+        
+        //Debug.DrawLine (transform.position, transform.position + new Vector3 (coinPickUpRadius, coinPickUpRadius, 0)); //comment for test
         Collider2D[] thrownCoinRadius = Physics2D.OverlapCircleAll (transform.position, coinPickUpRadius);
         foreach (Collider2D col in thrownCoinRadius) {
             if (col.tag == "ThrownCoin" && targetCoin == null) {
