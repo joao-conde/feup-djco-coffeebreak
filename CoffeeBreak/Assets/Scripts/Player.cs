@@ -81,6 +81,7 @@ public class Player : MonoBehaviour {
             coinToss = Instantiate (coinPrefab, transform.position + direction.normalized, Quaternion.identity);
             coinToss.GetComponent<CircleCollider2D> ().isTrigger = false;
             coinToss.tag = "ThrownCoin";
+            actionSound.volume = 0.5f * GameManager.instance.sfxMultiplier;
             actionSound.clip = coinThrowSound;
             actionSound.Play ();
             coinToss.GetComponent<Rigidbody2D> ().AddForce (2 * Vector3.Scale (new Vector3 (throwForce, throwForce, 0), direction.normalized), ForceMode2D.Impulse);
