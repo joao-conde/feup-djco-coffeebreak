@@ -1,20 +1,30 @@
 # Coffee Break - A quest for coffee
 
+### Context
+
+"Coffee Break" was developed by [@joao-conde](https://github.com/joao-conde), [@CarlosFr97](https://github.com/CarlosFr97) and [@literallysofia](https://github.com/literallysofia) for the Computer Games Development course at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial).
+
+The course professors made us choose between a platformer or a dungeon crawler game. We chose the latter.
+
+
 ### Game Concept
-The chosen theme is a dungeon crawler set in FEUP's campus at night. Its goal is to “simply” get a cup of coffee.
-The main mechanics of the game are:
-1. Collect coins, cups of coffee and one student card. 
-2. Sacrifice coins to distract guards, by throwing them and making a noise, attracting them or or tip over trash bins in order to attract the cleaning ladies.
-3. The player can get caught up to 3 times by the guards and get away with it by giving excuses for being at FEUP that late. When caught a 4th time, it’s game over.
-4. The player can walk or sprint (or walks slowly), where sprinting can make noise that can alert the guards
 
-### Main Challenges
-Playing as a regular student, the main challenges are:
-1. Collect enough coins (30 coins or 25 + a cup) to order a coffee.
+"Coffee Break" is a dungeon crawler set in FEUP's campus at night. The goal is to “simply” get a cup of coffee. This task becomes a lot harder.
+
+In order to get to the coffee, the student must:
+1. Collect enough coins (30 coins or 25 + a cup, current FEUP machine prices) to order a coffee.
 2. Collect the student card to open certain doors.
-3. Clear the way of the cleaning ladies and avoid being caught by the security guards.
+3. Clear the way of the cleaning ladies .
+4. Avoid being caught by the security guards.
 
-### Environment
+
+The main mechanics of the game are:
+1. Throw and sacrifice coins to distract guards, making a noise thus attracting them to other location.
+2. Tip over trash bins in order to attract the cleaning ladies.
+3. The player can walk normally or stealth walk. Normal walk makes noise alerting the guards that will search your location.
+
+
+### Development Environment
 
 Done in Unity 3.8
 Built for Windows, Linux and MacOS (in Builds)
