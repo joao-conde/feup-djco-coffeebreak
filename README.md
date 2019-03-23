@@ -13,3 +13,8 @@ Playing as a regular student, the main challenges are:
 1. Collect enough coins (30 coins or 25 + a cup) to order a coffee.
 2. Collect the student card to open certain doors.
 3. Clear the way of the cleaning ladies and avoid being caught by the security guards.
+
+### Environment
+
+Done in Unity 3.8
+Built for Windows, Linux and MacOS (in Builds)
