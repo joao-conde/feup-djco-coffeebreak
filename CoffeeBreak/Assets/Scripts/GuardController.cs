@@ -69,10 +69,13 @@ public class GuardController : AIController {
         Debug.DrawRay (gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized * viewDistance));
         if (hit.Length > 1) {
             if (hit[1].collider.CompareTag ("Player") && !spottedPlayer) {
-                spottedPlayer = true;
                 Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
-                alert.Play();
-                StartCoroutine (HandleSeen (player));
+                if(!player.IsImmune()){
+                    spottedPlayer = true;
+                    alert.Play();
+                    StartCoroutine (HandleSeen (player));
+                }
+                
             }
         }
     }
@@ -109,9 +112,12 @@ public class GuardController : AIController {
             if (col.tag == "Player") {
                 Player playerController = (Player) col.gameObject.GetComponent ("Player");
                 if (!playerController.IsStealth () && !spottedPlayer) {
-                    spottedPlayer = true;
-                    alert.Play();
-                    StartCoroutine (HandleSeen (playerController));
+                    if(!playerController.IsImmune()){
+
+                        spottedPlayer = true;
+                        alert.Play();
+                        StartCoroutine (HandleSeen (playerController));
+                    }
                 }
             }
         }

@@ -41,6 +41,8 @@ public class Player : MonoBehaviour {
     private int lives;
 
     private bool isStealth = false;
+
+    private bool isImmune = false;
     private Text coinsLabel;
     private Image cardHUD, cupHUD;
 
@@ -206,6 +208,10 @@ public class Player : MonoBehaviour {
         return isStealth;
     }
 
+    public bool IsImmune(){
+        return isImmune;
+    }
+
     public void looseLife () {
         if (lives <= 0) return;
         GameObject.Find ("Excuse" + lives).GetComponent<Image> ().enabled = false;
@@ -213,5 +219,13 @@ public class Player : MonoBehaviour {
         if (lives == 0) {
             FindObjectOfType<GameManager> ().EndGame ();
         }
+
+        isImmune = true;
+        StartCoroutine(HandleImmunity());
+    }
+
+    IEnumerator HandleImmunity(){
+        yield return new WaitForSeconds(2f);
+        isImmune = false;
     }
 }
