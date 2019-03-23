@@ -18,6 +18,7 @@ public class AIController : MonoBehaviour {
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         origin = transform.position;
+
         GotoNextPoint ();
     }
 

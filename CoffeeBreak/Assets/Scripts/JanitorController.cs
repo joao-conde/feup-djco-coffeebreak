@@ -60,7 +60,7 @@ public class JanitorController : AIController {
         }
 
         if (targetBin != null) {
-            agent.SetDestination (targetBin.GetComponent<Transform> ().position);
+            agent.SetDestination(targetBin.GetComponent<Transform> ().position);
 
             //on bin, pick it up m' lady
             if (agent.remainingDistance < 1f) {
