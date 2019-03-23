@@ -25,6 +25,7 @@ public class GuardController : AIController {
 
     private Renderer alertRenderer;
     private float stopThreshold = 0.20f;
+    private float chaseCoinThreshold = 0.5f;
 
     private float footstepsInitialVolume;
 
@@ -134,7 +135,7 @@ public class GuardController : AIController {
             Rigidbody2D rbCoin = targetCoin.GetComponent<Rigidbody2D> ();
 
             //stopped coin
-            if (rbCoin.velocity.x <= stopThreshold && rbCoin.velocity.y <= stopThreshold) {
+            if (rbCoin.velocity.x <= chaseCoinThreshold && rbCoin.velocity.y <= chaseCoinThreshold) {
                 target = rbCoin.position;
             }
 

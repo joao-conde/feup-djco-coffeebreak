@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour {
 
         if(followTarget != null){
             targetPosition = new Vector3 (followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z);
-            transform.position = Vector3.Lerp (transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            transform.position = Vector3.Lerp (transform.position, targetPosition + new Vector3(0,1,0), moveSpeed * Time.deltaTime);
         }
         
     }

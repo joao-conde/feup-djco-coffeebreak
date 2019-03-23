@@ -47,7 +47,7 @@ public class Player : MonoBehaviour {
     private Image cardHUD, cupHUD;
 
     private void Start () {
-        lives = 5;
+        lives = 6;
         actionSound = gameObject.GetComponent<AudioSource> ();
         initialVolume = actionSound.volume;
         actionSound.volume = initialVolume * GameManager.instance.sfxMultiplier;
@@ -147,7 +147,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Coin") || other.gameObject.CompareTag ("ThrownCoin")) {
             Destroy (other.gameObject);
             coins++;
-            actionSound.volume = 0.05f * GameManager.instance.sfxMultiplier;
+            actionSound.volume = 0.15f * GameManager.instance.sfxMultiplier;
             actionSound.clip = coinPickSound;
             actionSound.Play ();
             coinsLabel.text = "x " + coins; //TODO change to work with current HUD
@@ -156,7 +156,7 @@ public class Player : MonoBehaviour {
         if (other.gameObject.CompareTag ("Cup")) {
             Destroy (other.gameObject);
             hasCup = true;
-            actionSound.volume = 0.5f;
+            actionSound.volume = 0.5f * GameManager.instance.sfxMultiplier;
             actionSound.clip = cupPickSound;
             actionSound.Play ();
             cupHUD.enabled = true;
