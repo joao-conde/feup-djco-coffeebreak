@@ -24,8 +24,7 @@ public class GuardController : AIController {
     private AudioSource alert;
 
     private Renderer alertRenderer;
-    private float stopThreshold = 0.20f;
-    private float chaseCoinThreshold = 0.5f;
+    private float chaseCoinThreshold = 0.65f;
 
     private float footstepsInitialVolume;
 
