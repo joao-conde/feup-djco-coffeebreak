@@ -1,4 +1,4 @@
-# Coffee Break - A quest for coffee
+# Coffee Break - A quest for coffee :coffee:
 
 ### Context
 
