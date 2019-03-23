@@ -27,4 +27,5 @@ The main mechanics of the game are:
 ### Development Environment
 
 Done in Unity 3.8
+
 Built for Windows, Linux and MacOS (in Builds)
