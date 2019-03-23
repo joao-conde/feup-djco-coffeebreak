@@ -1,5 +1,4 @@
-# Coffee Break
-## A quest for coffee
+# Coffee Break - A quest for coffee
 
 ### Game Concept
 The chosen theme is a dungeon crawler set in FEUP's campus at night. Its goal is to “simply” get a cup of coffee.
