@@ -10,6 +10,7 @@ public class TextScroller : MonoBehaviour {
 
     public float timeBetweenChars;
 
+    private AudioSource typingSound;
     private bool complete = false;
     private string text;
     private Text display;
@@ -19,6 +20,7 @@ public class TextScroller : MonoBehaviour {
     void Start () {
         StartCoroutine (LoadGameAsync ()); //load game scene async while text displays
         sc = FindObjectOfType<SceneChanger> ();
+        typingSound = GetComponent<AudioSource> ();
         display = gameObject.GetComponent<Text> ();
         text = display.text;
         display.text = "";
@@ -31,6 +33,7 @@ public class TextScroller : MonoBehaviour {
             if (complete)
                 sc.FadeToScene (2);
             else {
+                typingSound.Stop ();
                 StopCoroutine (coroutine);
                 display.text = text;
                 complete = true;
@@ -39,6 +42,7 @@ public class TextScroller : MonoBehaviour {
     }
 
     IEnumerator DisplayCharByChar () {
+        typingSound.Play ();
         foreach (char c in text) {
             display.text += c;
             yield return new WaitForSeconds (timeBetweenChars);
