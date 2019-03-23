@@ -1,13 +1,3 @@
-# TODO LIST RUSH HOUR EDITION
-
-11. [ ] Ingame pause button
-
-12. [ ] MainMenu - How to play image (?)
-
-0.  [ ] Delete debug/console logs, unused scenes and assets, maybe .meta files
-
-0.  [ ] Map design
-
 # DONE
 
 1.  [x] Player a velocidade normal perto do guarda -> apanhado, guarda vira-se para ele
@@ -33,3 +23,5 @@
 10. [x] Som ambiente e sfx  - maquina de café, maquina de café estragada, som alerta guarda, balde do lixo a tombar, cartao, copo de café, tabuleta de tips
 
 0.  [x] If player hits guard he gets caught
+
+11. [x] Ingame pause button

@@ -1435,7 +1435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WASD : Walking '
+  m_Text: "WASD: \x13 Walking "
 --- !u!222 &729343683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2663,7 +2663,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Shift: Hold to walk slower'
+  m_Text: "Shift:  Hold to stealth\x13"
 --- !u!222 &1733364397
 CanvasRenderer:
   m_ObjectHideFlags: 0
