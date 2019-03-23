@@ -63,7 +63,6 @@ public class Player : MonoBehaviour {
 
     private void Update () {
 
-        HandlePauseMenu();
         HandlePlayerMovement ();
         HandleCoinToss ();
     }
@@ -187,11 +186,6 @@ public class Player : MonoBehaviour {
         }
     }
 
-    private void HandlePauseMenu(){
-        if(Input.GetButtonDown("Cancel")){
-            GameManager.instance.TogglePause();
-        }
-    }
 
     private void OnTriggerExit2D (Collider2D collision) {
         if (collision.gameObject.CompareTag ("Doors") || collision.gameObject.CompareTag ("TrashBin")) {
