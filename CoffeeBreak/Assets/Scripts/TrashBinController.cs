@@ -6,13 +6,12 @@ public class TrashBinController : MonoBehaviour {
 
     private bool isOnFloor;
     private AudioSource sound;
-
     private float initialVolume;
-    Animator m_Animator;
+    private Animator m_Animator;
 
     public void Start () {
         this.isOnFloor = false;
-        sound = GetComponent<AudioSource>();
+        sound = GetComponent<AudioSource> ();
         initialVolume = sound.volume;
         sound.volume = initialVolume * GameManager.instance.sfxMultiplier;
         m_Animator = gameObject.GetComponent<Animator> ();
@@ -21,7 +20,7 @@ public class TrashBinController : MonoBehaviour {
     public void DropBin () {
         if (!isOnFloor) {
             isOnFloor = true;
-            sound.Play();
+            sound.Play ();
             m_Animator.SetBool ("isOnFloor", true);
         }
     }

@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneOnClick : MonoBehaviour {
     public void LoadByIndex (int sceneIndex) {
-        //Wait ();
         SceneManager.LoadScene (sceneIndex);
     }
 

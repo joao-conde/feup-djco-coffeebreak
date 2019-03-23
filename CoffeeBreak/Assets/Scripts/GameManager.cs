@@ -4,22 +4,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
-
 public class GameManager : MonoBehaviour {
+
     public static GameManager instance = null;
     public int initialPlayerCoins;
-
     public float musicMultiplier = 1;
-
     public float sfxMultiplier = 1;
 
-
-    public void setMusicMultiplier(float mult){
+    public void setMusicMultiplier (float mult) {
         musicMultiplier = mult;
     }
 
-    public void setSFXMultiplier(float mult){
+    public void setSFXMultiplier (float mult) {
         sfxMultiplier = mult;
     }
 
@@ -31,8 +27,6 @@ public class GameManager : MonoBehaviour {
 
         DontDestroyOnLoad (gameObject);
     }
-
-
 
     public void EndGame () {
         LoadScene (3);

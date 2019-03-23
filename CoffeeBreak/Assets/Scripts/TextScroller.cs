@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 using static SceneChanger;
 
@@ -13,7 +13,6 @@ public class TextScroller : MonoBehaviour {
     private bool complete = false;
     private string text;
     private Text display;
-
     private IEnumerator coroutine;
     private SceneChanger sc;
 

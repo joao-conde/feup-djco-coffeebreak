@@ -11,23 +11,17 @@ using static TipController;
 public class Player : MonoBehaviour {
 
     public float throwForce;
-
     public float stealthSlowPerc;
     public Transform coinPrefab;
     public float moveSpeed;
     public Vector3 respawnPoint;
-
-    private AudioSource actionSound;
-
-    private float initialVolume;
-
     public AudioClip coinPickSound;
     public AudioClip coinThrowSound;
-
     public AudioClip cupPickSound;
-
     public AudioClip cardPickSound;
 
+    private AudioSource actionSound;
+    private float initialVolume;
     private int coins;
     private Transform coinToss = null;
     private float stopThreshold = 0.5f;
@@ -37,11 +31,8 @@ public class Player : MonoBehaviour {
     private bool playerMoving;
     private Vector2 lastMove;
     private Rigidbody2D rb;
-
     private int lives;
-
     private bool isStealth = false;
-
     private bool isImmune = false;
     private Text coinsLabel;
     private Image cardHUD, cupHUD;
@@ -62,7 +53,6 @@ public class Player : MonoBehaviour {
     }
 
     private void Update () {
-
         HandlePlayerMovement ();
         HandleCoinToss ();
     }
@@ -136,7 +126,7 @@ public class Player : MonoBehaviour {
 
                 if (interactiveObject.CompareTag ("CoffeeMachine")) {
                     if ((hasCup && coins >= 25) || coins >= 30) {
-                        FindObjectOfType<GameManager>().WinGame();
+                        FindObjectOfType<GameManager> ().WinGame ();
                     }
                 }
             }
@@ -150,7 +140,7 @@ public class Player : MonoBehaviour {
             actionSound.volume = 0.15f * GameManager.instance.sfxMultiplier;
             actionSound.clip = coinPickSound;
             actionSound.Play ();
-            coinsLabel.text = "x " + coins; //TODO change to work with current HUD
+            coinsLabel.text = "x " + coins;
         }
 
         if (other.gameObject.CompareTag ("Cup")) {
@@ -187,7 +177,6 @@ public class Player : MonoBehaviour {
         }
     }
 
-
     private void OnTriggerExit2D (Collider2D collision) {
         if (collision.gameObject.CompareTag ("Doors") || collision.gameObject.CompareTag ("TrashBin")) {
             interactiveObject = null;
@@ -203,7 +192,7 @@ public class Player : MonoBehaviour {
         return isStealth;
     }
 
-    public bool IsImmune(){
+    public bool IsImmune () {
         return isImmune;
     }
 
@@ -216,11 +205,11 @@ public class Player : MonoBehaviour {
         }
 
         isImmune = true;
-        StartCoroutine(HandleImmunity());
+        StartCoroutine (HandleImmunity ());
     }
 
-    IEnumerator HandleImmunity(){
-        yield return new WaitForSeconds(2f);
+    IEnumerator HandleImmunity () {
+        yield return new WaitForSeconds (2f);
         isImmune = false;
     }
 }

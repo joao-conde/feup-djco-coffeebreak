@@ -16,11 +16,11 @@ public class HighlightController : MonoBehaviour {
         float waitTime = totalSeconds / 2;
         // Get half of the seconds (One half to get brighter and one to get darker)
         while (myLight.intensity < maxIntensity) {
-            myLight.intensity += maxIntensity*Time.deltaTime / waitTime; // Increase intensity
+            myLight.intensity += maxIntensity * Time.deltaTime / waitTime; // Increase intensity
             yield return null;
         }
         while (myLight.intensity > 0) {
-            myLight.intensity -= maxIntensity*Time.deltaTime / waitTime; //Decrease intensity
+            myLight.intensity -= maxIntensity * Time.deltaTime / waitTime; //Decrease intensity
             yield return null;
         }
         yield return null;

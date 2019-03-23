@@ -48,7 +48,6 @@ public class JanitorController : AIController {
     }
 
     private void HandleTrashBins () {
-        //Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll (transform.position, awerenessRadius);
         foreach (Collider2D col in hitColliders) {
             if (col.tag == "TrashBin") {
@@ -60,10 +59,9 @@ public class JanitorController : AIController {
         }
 
         if (targetBin != null) {
-            agent.SetDestination(targetBin.GetComponent<Transform> ().position);
+            agent.SetDestination (targetBin.GetComponent<Transform> ().position);
 
-            //on bin, pick it up m' lady
-            if (agent.remainingDistance < 1f) {
+            if (agent.remainingDistance < 1f) { //on bin, pick it up m' lady
                 TrashBinController binController = (TrashBinController) targetBin.GetComponent ("TrashBinController");
                 binController.PickupBin ();
                 targetBin = null;

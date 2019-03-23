@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour {
 
     public Animator animator;
+    
     private int nextScene;
 
     public void FadeToScene (int sceneIndex) {

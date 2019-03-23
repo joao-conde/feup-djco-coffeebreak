@@ -7,40 +7,30 @@ using static Player;
 public class GuardController : AIController {
 
     public Light flashlight;
-
     public float viewDistance = 3f;
-
-    
     public float rotationSpeed;
     public float awerenessRadius;
     public float coinPickUpRadius;
-
     public GameObject alertIcon;
 
     private GameObject targetCoin = null;
-
+    private GameObject targetPlayer = null;
     private AudioSource footsteps;
-
     private AudioSource alert;
-
     private Renderer alertRenderer;
     private float chaseCoinThreshold = 0.65f;
-
     private float footstepsInitialVolume;
-
     private float alertInitialVolume;
-
     private bool spottedPlayer = false;
     private Animator animator;
 
     protected override void Start () {
         base.Start ();
         animator = GetComponent<Animator> ();
-
-        footsteps = gameObject.GetComponents<AudioSource> ()[0];
+        footsteps = gameObject.GetComponents<AudioSource> () [0];
         footstepsInitialVolume = footsteps.volume;
         footsteps.volume = footstepsInitialVolume * GameManager.instance.sfxMultiplier;
-        alert = gameObject.GetComponents<AudioSource>()[1];
+        alert = gameObject.GetComponents<AudioSource> () [1];
         alertInitialVolume = alert.volume;
         alert.volume = alertInitialVolume * GameManager.instance.sfxMultiplier;
         alertRenderer = alertIcon.GetComponent<Renderer> ();
@@ -66,22 +56,18 @@ public class GuardController : AIController {
 
     protected void FieldOfView () {
         RaycastHit2D[] hit = Physics2D.RaycastAll ((Vector2) gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized), viewDistance);
-        //Debug.DrawRay (gameObject.transform.position, ((Vector2) flashlight.transform.forward.normalized * viewDistance));
         if (hit.Length > 1) {
             if (hit[1].collider.CompareTag ("Player") && !spottedPlayer) {
                 Player player = (Player) hit[1].collider.gameObject.GetComponent ("Player");
-                if(!player.IsImmune()){
-                    spottedPlayer = true;
-                    alert.Play();
+                if (!player.IsImmune ()) {
                     StartCoroutine (HandleSeen (player));
                 }
-                
+
             }
         }
     }
 
     private void HandleMovement () {
-
         if (agent.velocity.y > 0 && agent.velocity.x > 0 && agent.velocity.y > agent.velocity.x) {
             animator.SetBool ("guardRight", false);
             animator.SetBool ("guardLeft", false);
@@ -106,29 +92,23 @@ public class GuardController : AIController {
     }
 
     private void HandleDistraction () {
-        //Debug.DrawLine (transform.position, transform.position + new Vector3 (awerenessRadius, awerenessRadius, 0)); //comment for test
         Collider2D[] playerRadius = Physics2D.OverlapCircleAll (transform.position, awerenessRadius);
         foreach (Collider2D col in playerRadius) {
             if (col.tag == "Player") {
                 Player playerController = (Player) col.gameObject.GetComponent ("Player");
                 if (!playerController.IsStealth () && !spottedPlayer) {
-                    if(!playerController.IsImmune()){
-
-                        spottedPlayer = true;
-                        alert.Play();
-                        StartCoroutine (HandleSeen (playerController));
+                    if (!playerController.IsImmune ()) {
+                        targetPlayer = col.gameObject;
                     }
                 }
             }
         }
 
-        
-        //Debug.DrawLine (transform.position, transform.position + new Vector3 (coinPickUpRadius, coinPickUpRadius, 0)); //comment for test
         Collider2D[] thrownCoinRadius = Physics2D.OverlapCircleAll (transform.position, coinPickUpRadius);
         foreach (Collider2D col in thrownCoinRadius) {
             if (col.tag == "ThrownCoin" && targetCoin == null) {
                 targetCoin = col.gameObject;
-            } 
+            }
         }
 
         if (targetCoin != null) {
@@ -144,19 +124,26 @@ public class GuardController : AIController {
                 Destroy (targetCoin);
                 targetCoin = null;
             }
+        } else if (targetPlayer != null) {
+            Rigidbody2D rbPlayer = targetPlayer.GetComponent<Rigidbody2D> ();
+            target = rbPlayer.position;
+
+            if (agent.remainingDistance >= awerenessRadius) {
+                targetPlayer = null;
+            }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other){
-        if(other.gameObject.tag == "Player" && !spottedPlayer){
-                spottedPlayer = true;
-                Player player = (Player) other.collider.gameObject.GetComponent ("Player");
-                alert.Play();
-                StartCoroutine (HandleSeen (player));
+    private void OnCollisionEnter2D (Collision2D other) {
+        if (other.gameObject.tag == "Player" && !spottedPlayer) {
+            Player player = (Player) other.collider.gameObject.GetComponent ("Player");
+            StartCoroutine (HandleSeen (player));
         }
     }
 
     private IEnumerator HandleSeen (Player player) {
+        spottedPlayer = true;
+        alert.Play ();
         StartCoroutine (DoBlinks (1.5f, 0.2f));
         target = player.gameObject.transform.position;
         yield return new WaitForSeconds (0.5f);
