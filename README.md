@@ -4,7 +4,7 @@
 
 "Coffee Break" was developed by [@joao-conde](https://github.com/joao-conde), [@CarlosFr97](https://github.com/CarlosFr97) and [@literallysofia](https://github.com/literallysofia) for the [Computer Games Development](https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=281244) course at [FEUP](https://sigarra.up.pt/feup/pt/web_page.inicial).
 
-The course professors made us choose between a platformer or a dungeon crawler game. We chose the latter.
+The course professors made us choose between a platformer or a dungeon crawler game both FEUP inspired. We chose the latter.
 
 
 ### Game Concept
