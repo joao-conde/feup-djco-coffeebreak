@@ -21,11 +21,11 @@ public class AudioSlider : MonoBehaviour{
         sfxSlider.value = gameManager.sfxMultiplier;
     }
 
-    public void MusicSliderValueChangeCheck()    {
+    private void MusicSliderValueChangeCheck()    {
         gameManager.setMusicMultiplier(musicSlider.value);
     }
 
-    public void SfxSliderValueChangeCheck(){
+    private void SfxSliderValueChangeCheck(){
         gameManager.setSFXMultiplier(sfxSlider.value);
     }
 }

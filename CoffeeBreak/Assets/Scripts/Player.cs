@@ -86,9 +86,11 @@ public class Player : MonoBehaviour {
 
         if (Input.GetAxisRaw ("Horizontal") > 0.5f || Input.GetAxisRaw ("Horizontal") < -0.5f) {
             lastMove = new Vector2 (Input.GetAxisRaw ("Horizontal"), 0f);
-            if (Input.GetKey (KeyCode.LeftArrow) || Input.GetKey (KeyCode.A)) {
+            
+            if (Input.GetAxisRaw ("Horizontal") < -0.5f) {
                 playerAnimator.SetTrigger ("playerLeft");
-            } else if (Input.GetKey (KeyCode.RightArrow) || Input.GetKey (KeyCode.D)) {
+            } 
+            else {
                 playerAnimator.SetTrigger ("playerRight");
             }
 
