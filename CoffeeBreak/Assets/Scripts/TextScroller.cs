@@ -42,6 +42,7 @@ public class TextScroller : MonoBehaviour {
     }
 
     IEnumerator DisplayCharByChar () {
+        typingSound.volume = 0.5f * GameManager.instance.sfxMultiplier;
         typingSound.Play ();
         foreach (char c in text) {
             display.text += c;
