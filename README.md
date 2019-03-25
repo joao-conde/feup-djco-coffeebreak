@@ -30,7 +30,7 @@ The main mechanics of the game are:
 
 <img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-1.jpg" width="800"><br><br>
 <img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-2.jpg" width="800"><br><br>
-<img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-3.jpg" width="800"><br>
+<img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-3.jpg" width="800"><br><br><img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-4.jpg" width="800"><br>
 
 ## Development Environment
 
