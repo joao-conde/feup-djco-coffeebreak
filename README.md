@@ -14,7 +14,7 @@ Game developed by [Carlos Freitas](https://github.com/CarlosFr97), [João Conde]
 
 ## Game Concept
 
-**Coffee Break** is a roguelike game set in FEUP's campus at night.
+**Coffee Break** is a dungeon crawler game set in FEUP's campus at night.
 
 During a long night of work, a cup of coffee is a must. You don't have any money, so you should collect anything you find. Make your way to the coffee machine but be aware! Don't get caught by the guards. The cleaning ladies are out there, blocking entrances and standing in your way. Be smart, and you shall be rewarded.
 
