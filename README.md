@@ -5,6 +5,7 @@ Project for the Computer Games Development (DJCO) class of the Master in Informa
 
 - [Game Concept](#game-concept)
 - [Mechanics](#mechanics)
+- [Screenshots](#screenshots)
 - [Development Environment](#development-environment)
 
 Game developed by [Carlos Freitas](https://github.com/CarlosFr97), [João Conde](https://github.com/joao-conde) and [Sofia Silva](https://github.com/literallysofia).
@@ -23,9 +24,13 @@ The main mechanics of the game are:
 - Collect the student card to open certain doors.
 - Clear the way of the cleaning ladies: tip over trash bins in order to attract them.
 - Avoid being caught by the security guards: throw and sacrifice coins to distract them, making a noise thus attracting them to other location.
-- The player can get caught up to 3 times by the guards and get away with it by giving excuses for being at FEUP that late. When caught a 4th time, it’s game over.
 - The player can walk normally or stealth walk. Normal walk makes noise alerting the guards that will search your location.
 
+## Screenshots
+
+<img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-1.jpg" width="800"><br><br>
+<img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-2.jpg" width="800"><br><br>
+<img src="https://github.com/joao-conde/feup-djco-coffeebreak/blob/master/Screenshots/screenshot-3.jpg" width="800"><br>
 
 ## Development Environment
 
