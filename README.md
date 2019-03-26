@@ -1,10 +1,6 @@
 # Coffee Break :coffee:
 ### a quest for coffee
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/IeWHH8bPWG0" frameborder="0" allowfullscreen></iframe>
-
-
-
 Project for the Computer Games Development (DJCO) class of the Master in Informatics and Computer Engineering (MIEIC) at the Faculty of Engineering of the University of Porto (FEUP).
 
 - [Game Concept](#game-concept)
